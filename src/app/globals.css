@@ -1,0 +1,581 @@
+@import "tailwindcss";
+
+/* ═══════════════════════════════════════════
+   FONTS — Clash Display + Satoshi (Fontshare)
+   ═══════════════════════════════════════════ */
+
+@font-face {
+  font-family: 'Clash Display';
+  src: url('/fonts/clash/ClashDisplay-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Clash Display';
+  src: url('/fonts/clash/ClashDisplay-Semibold.otf') format('opentype');
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Clash Display';
+  src: url('/fonts/clash/ClashDisplay-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Clash Display';
+  src: url('/fonts/clash/ClashDisplay-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Clash Display';
+  src: url('/fonts/clash/ClashDisplay-Light.otf') format('opentype');
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Clash Display';
+  src: url('/fonts/clash/ClashDisplay-Extralight.otf') format('opentype');
+  font-weight: 200;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/satoshi/Satoshi-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/satoshi/Satoshi-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/satoshi/Satoshi-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/satoshi/Satoshi-Black.otf') format('opentype');
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/satoshi/Satoshi-BlackItalic.otf') format('opentype');
+  font-weight: 900;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/satoshi/Satoshi-Light.otf') format('opentype');
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/satoshi/Satoshi-Italic.otf') format('opentype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/satoshi/Satoshi-BoldItalic.otf') format('opentype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/satoshi/Satoshi-LightItalic.otf') format('opentype');
+  font-weight: 300;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/satoshi/Satoshi-MediumItalic.otf') format('opentype');
+  font-weight: 500;
+  font-display: swap;
+  font-style: italic;
+}
+
+/* ═══════════════════════════════════════════
+   DESIGN TOKENS
+   ═══════════════════════════════════════════ */
+
+:root {
+  /* ── Core Palette ── */
+  --bg-primary: #000000;
+  --bg-secondary: #080810;
+  --bg-surface: #12121e;
+  --bg-inverted: #F4F1EC;
+  --bg-gradient-primary: linear-gradient(161deg, rgba(17, 17, 68, 0.20) 11.86%, rgba(34, 51, 130, 0.20) 88.14%);
+  --bg-footer: radial-gradient(260.87% 50% at 50% 50%, rgba(249, 133, 19, 0.20) 0%, rgba(155, 172, 216, 0.20) 50%, rgba(17, 17, 68, 0.20) 100%);
+
+  /* ── Text ── */
+  --text-primary: #F4F1EC;
+  --text-secondary: #9BACD8;
+  --text-faint: rgba(244, 241, 236, 0.35);
+  --text-on-light: #000000;
+  --text-on-light-secondary: #3a3a3a;
+
+  /* ── Accent ── */
+  --accent: #F98513;
+  --accent-light: #ffa040;
+  --accent-dim: rgba(249, 133, 19, 0.15);
+  --accent-glow: rgba(249, 133, 19, 0.30);
+
+  /* ── Secondary ── */
+  --secondary: #9BACD8;
+  --secondary-dim: rgba(155, 172, 216, 0.15);
+
+  /* ── Borders ── */
+  --border: rgba(155, 172, 216, 0.10);
+  --border-hover: rgba(155, 172, 216, 0.22);
+  --border-on-light: rgba(0, 0, 0, 0.1);
+
+  /* ── Glass ── */
+  --nav-bg: rgba(0, 0, 0, 0.7);
+  --nav-border: rgba(155, 172, 216, 0.08);
+
+  /* ── Typography ── */
+  --font-display: 'Clash Display', 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-body: 'Satoshi', 'DM Sans', system-ui, sans-serif;
+
+  /* ── Layout ── */
+  --max-width: 1280px;
+  --nav-height: 80px;
+
+  /* ── Easing ── */
+  --ease: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --ease-out: cubic-bezier(0.0, 0.0, 0.2, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* ═══════════════════════════════════════════
+   TAILWIND v4 THEME EXTENSION
+   ═══════════════════════════════════════════ */
+
+@theme inline {
+  --color-bg-primary: var(--bg-primary);
+  --color-bg-secondary: var(--bg-secondary);
+  --color-bg-surface: var(--bg-surface);
+  --color-bg-inverted: var(--bg-inverted);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-faint: var(--text-faint);
+  --color-accent: var(--accent);
+  --color-accent-light: var(--accent-light);
+  --color-accent-dim: var(--accent-dim);
+  --color-accent-glow: var(--accent-glow);
+  --color-secondary: var(--secondary);
+  --color-secondary-dim: var(--secondary-dim);
+  --color-border: var(--border);
+  --color-border-hover: var(--border-hover);
+  --font-sans: var(--font-body);
+  --font-display: var(--font-display);
+}
+
+/* ═══════════════════════════════════════════
+   GLOBAL RESET & BASE
+   ═══════════════════════════════════════════ */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-weight: 300;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--accent);
+  color: #000000;
+}
+
+/* ═══════════════════════════════════════════
+   TYPOGRAPHY CLASSES
+   ═══════════════════════════════════════════ */
+
+.t-display {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(3rem, 8vw, 7rem);
+  line-height: 1.02;
+  letter-spacing: -0.03em;
+  color: var(--text-primary);
+}
+
+.t-h1 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(2rem, 5vw, 4.5rem);
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+}
+
+.t-h2 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(1.5rem, 3.5vw, 3rem);
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  color: var(--text-primary);
+}
+
+.t-h3 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(1.2rem, 2.5vw, 2rem);
+  line-height: 1.25;
+  color: var(--text-primary);
+}
+
+.t-label {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+.t-body {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.75;
+  color: var(--text-secondary);
+}
+
+.t-body-lg {
+  font-family: var(--font-body);
+  font-size: 1.15rem;
+  font-weight: 300;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+/* ═══════════════════════════════════════════
+   SECTION CONTAINER
+   ═══════════════════════════════════════════ */
+
+.section-container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+@media (max-width: 768px) {
+  .section-container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+/* ═══════════════════════════════════════════
+   GRAIN OVERLAY
+   ═══════════════════════════════════════════ */
+
+.grain-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0.035;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 256px 256px;
+}
+
+/* ═══════════════════════════════════════════
+   MARQUEE ANIMATION
+   ═══════════════════════════════════════════ */
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 25s linear infinite;
+}
+
+/* ═══════════════════════════════════════════
+   COPPER GRADIENT PULSE
+   ═══════════════════════════════════════════ */
+
+@keyframes gradient-pulse {
+  0%, 100% { opacity: 0.15; transform: scale(1); }
+  50% { opacity: 0.25; transform: scale(1.05); }
+}
+
+.gradient-pulse {
+  animation: gradient-pulse 8s ease-in-out infinite;
+}
+
+/* ═══════════════════════════════════════════
+   SCROLLBAR
+   ═══════════════════════════════════════════ */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-light);
+}
+
+/* ═══════════════════════════════════════════
+   MOBILE MENU LOCK
+   ═══════════════════════════════════════════ */
+
+body.menu-open {
+  overflow: hidden;
+}
+
+/* ═══════════════════════════════════════════
+   REDUCED MOTION
+   ═══════════════════════════════════════════ */
+
+/* ═══════════════════════════════════════════
+   MOBILE RESPONSIVE OVERRIDES
+   Uses !important to override inline styles.
+   Targets class hooks added to components.
+   ═══════════════════════════════════════════ */
+
+@media (max-width: 768px) {
+
+  /* ── Navigation ── */
+  nav > div[style] {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  /* ── About Section ── */
+  #about {
+    padding-top: 64px !important;
+    padding-bottom: 64px !important;
+  }
+
+  /* ── Founders Section ── */
+  .founders-header-wrap,
+  .founders-cards-wrap {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+
+  .founders-header {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 24px !important;
+    margin-bottom: 40px !important;
+  }
+
+  .founders-header p {
+    max-width: 100% !important;
+  }
+
+  .founders-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+
+  .founders-divider {
+    display: none !important;
+  }
+
+  .founder-image {
+    height: 400px !important;
+  }
+
+  /* ── Human Experience Section ── */
+  .human-layout {
+    flex-direction: column !important;
+    gap: 40px !important;
+    padding: 64px 24px !important;
+  }
+
+  .human-collage {
+    height: 360px !important;
+  }
+
+  .human-divider {
+    margin: 0 24px !important;
+  }
+
+  .rov-block {
+    flex-direction: column !important;
+    padding: 40px 24px 64px !important;
+    gap: 32px !important;
+  }
+
+  .rov-cards {
+    width: 100% !important;
+  }
+
+  /* ── Events Section ── */
+  .events-header {
+    padding: 64px 24px 0 !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 24px !important;
+  }
+
+  .events-featured {
+    margin-left: 24px !important;
+    margin-right: 24px !important;
+    margin-top: 32px !important;
+    grid-template-columns: 1fr !important;
+  }
+
+  .events-image-panel {
+    min-height: 200px !important;
+  }
+
+  .events-content-panel {
+    padding: 32px 24px !important;
+  }
+
+  .events-past-grid {
+    grid-template-columns: 1fr !important;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+
+  /* ── Gallery Section ── */
+  .gallery-section {
+    padding-top: 64px !important;
+  }
+
+  /* ── Footer ── */
+  .footer-cta {
+    padding: 48px 24px 40px !important;
+  }
+
+  .footer-inner {
+    flex-direction: column !important;
+    padding: 40px 24px !important;
+    gap: 32px !important;
+  }
+
+  .footer-divider {
+    width: 100% !important;
+    height: 1px !important;
+    margin: 0 !important;
+  }
+
+  .footer-nav {
+    gap: 32px !important;
+  }
+
+  .footer-bottom {
+    margin: 0 24px !important;
+    flex-direction: column !important;
+    gap: 16px !important;
+    align-items: flex-start !important;
+  }
+
+  /* Footer CTA heading size */
+  .footer-cta h2,
+  .footer-cta p[style*="clamp"] {
+    font-size: clamp(1.8rem, 8vw, 3rem) !important;
+  }
+
+  /* ROV logo in footer — slightly smaller */
+  footer img[alt="R.O.V Studios"] {
+    height: 40px !important;
+  }
+}
+
+/* ── Smaller phones (≤ 480px) ── */
+@media (max-width: 480px) {
+
+  .founder-image {
+    height: 320px !important;
+  }
+
+  .human-collage {
+    height: 280px !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  .animate-marquee {
+    animation: none;
+  }
+}

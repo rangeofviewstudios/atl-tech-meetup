@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find 'c:/Users/ayush/Desktop/R.O.V/LOCAL WEBSITE/dkmcorp/src' -type f -name *.tsx -o -name *.ts -o -name *.css)",
+      "Bash(find 'c:/Users/ayush/Desktop/R.O.V/LOCAL WEBSITE/rov-website-2/app' -type f -name *.tsx -o -name *.ts -o -name *.css)",
+      "Bash(mv .claude .claude_backup)",
+      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --use-npm)",
+      "Bash(cp \"ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Variable.woff2\" .)",
+      "Bash(cp \"Satoshi_Complete/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Variable.woff2\" .)",
+      "Bash(cp \"Satoshi_Complete/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-VariableItalic.woff2\" .)",
+      "Bash(ls *.woff2)"
+    ]
+  }
+}
