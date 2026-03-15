@@ -315,7 +315,7 @@ export default function Events() {
                     fontFamily: "var(--font-body)",
                     fontSize: "15px",
                     lineHeight: 1.75,
-                    color: "#5a5a6a",
+                    color: "#9a9aaa",
                     marginBottom: "20px",
                   }}
                 >
@@ -331,12 +331,12 @@ export default function Events() {
                     marginBottom: "36px",
                   }}
                 >
-                  <MapPin size={14} style={{ color: "#4a4a5a", flexShrink: 0 }} />
+                  <MapPin size={14} style={{ color: "#8a8a9a", flexShrink: 0 }} />
                   <span
                     style={{
                       fontFamily: "var(--font-body)",
                       fontSize: "13px",
-                      color: "#4a4a5a",
+                      color: "#8a8a9a",
                     }}
                   >
                     {UPCOMING_EVENT.location}

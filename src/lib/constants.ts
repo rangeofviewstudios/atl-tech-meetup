@@ -17,7 +17,7 @@ export const UPCOMING_EVENT = {
   description:
     "Join us for an evening exploring real-world AI deployment strategies. Featuring talks on MLOps pipelines, edge inference, and the human side of shipping AI products.",
   location: "Atlanta Tech Park, Peachtree Corners, GA",
-  rsvpLink: "https://www.meetup.com/atlanta-tech-meetup/",
+  rsvpLink: "https://www.meetup.com/atl-tech-meetup/",
 };
 
 export const PAST_EVENTS = [
@@ -122,7 +122,7 @@ export const FOUNDERS = [
 export const MEETUP_URL = "https://www.meetup.com/atl-tech-meetup/";
 
 export const SOCIAL_LINKS = [
-  { label: "Meetup", href: "https://www.meetup.com/atlanta-tech-meetup/" },
+  { label: "Meetup", href: "https://www.meetup.com/atl-tech-meetup/" },
   { label: "LinkedIn", href: "https://linkedin.com" },
   { label: "X / Twitter", href: "https://x.com" },
 ] as const;

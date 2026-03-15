@@ -20,6 +20,14 @@
   line-height: 1.8;
 }
 
+.scroll-reveal-body-lg {
+  font-family: var(--font-body);
+  font-size: 1.15rem;
+  color: #f0ece0;
+  line-height: 1.7;
+  font-weight: 300;
+}
+
 .scroll-reveal-body-sm {
   font-family: var(--font-body);
   font-size: 14px;

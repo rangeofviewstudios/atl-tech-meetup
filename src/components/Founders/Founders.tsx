@@ -192,7 +192,7 @@ export default function Founders() {
                         position: "absolute",
                         inset: 0,
                         background:
-                          "linear-gradient(to bottom, transparent 35%, rgba(7,7,13,0.5) 65%, #07070d 100%)",
+                          "linear-gradient(to bottom, transparent 20%, rgba(7,7,13,0.6) 50%, #07070d 85%)",
                         pointerEvents: "none",
                       }}
                     />
@@ -246,7 +246,7 @@ export default function Founders() {
                         fontFamily: "var(--font-body)",
                         fontSize: "13.5px",
                         lineHeight: 1.7,
-                        color: "#5a5a6a",
+                        color: "#9a9aaa",
                         marginBottom: "22px",
                         maxWidth: "320px",
                         marginTop: 0,
@@ -287,7 +287,7 @@ export default function Founders() {
                             display: "flex",
                             alignItems: "center",
                             justifyContent: "center",
-                            color: "#5a5a6a",
+                            color: "#8a8a9a",
                             textDecoration: "none",
                             transition: "border-color 0.3s, color 0.3s",
                           }}
@@ -310,7 +310,7 @@ export default function Founders() {
                             display: "flex",
                             alignItems: "center",
                             justifyContent: "center",
-                            color: "#5a5a6a",
+                            color: "#8a8a9a",
                             textDecoration: "none",
                             transition: "border-color 0.3s, color 0.3s",
                           }}
