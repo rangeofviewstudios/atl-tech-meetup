@@ -96,7 +96,7 @@ export const FOUNDERS = [
   {
     name: "Andrew Schiller",
     role: "FOUNDER",
-    image: "",
+    image: "/images/schiller.jpg",
     fallbackGradient: "linear-gradient(160deg, #2a1008 0%, #1a0c18 50%, #07070d 100%)",
     bio: "Started ATM because Atlanta deserved a tech community built on real talk, not pitch decks. Every format, every agenda — his obsession.",
     quote: "The vibe is the product.",
@@ -108,7 +108,7 @@ export const FOUNDERS = [
   {
     name: "A.D. Slaton",
     role: "CO-FOUNDER",
-    image: "",
+    image: "/images/ad2.jpg",
     fallbackGradient: "linear-gradient(160deg, #071030 0%, #0d1520 50%, #07070d 100%)",
     bio: "The infrastructure behind the community. A connector by nature, engineer by trade — she makes sure every person walks in feeling like they already belong.",
     quote: "Community is infrastructure.",
@@ -117,7 +117,7 @@ export const FOUNDERS = [
     linkedin: "https://linkedin.com",
     x: "https://x.com",
   },
-] as const;
+];
 
 export const MEETUP_URL = "https://www.meetup.com/atl-tech-meetup/";
 

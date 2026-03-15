@@ -54,9 +54,9 @@ export default function Hero() {
                 delay: 0.35,
                 ease: [0.16, 1, 0.3, 1],
               }}
-              className="font-[var(--font-body)] font-medium italic text-white/90 leading-[0.88] tracking-[-0.03em]"
+              className="font-[var(--font-display)] font-bold text-white leading-[0.88] tracking-[-0.04em]"
               style={{
-                fontSize: "clamp(3.5rem, 14vw, 15rem)",
+                fontSize: "clamp(4rem, 15vw, 16rem)",
               }}
             >
               Tech

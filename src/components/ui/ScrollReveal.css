@@ -1,0 +1,28 @@
+.scroll-reveal {
+  position: relative;
+  margin: 0;
+}
+
+.scroll-reveal-text {
+  margin: 0;
+}
+
+.scroll-reveal-text .word {
+  display: inline-block;
+  will-change: opacity, filter;
+}
+
+/* Body text style for Human Experience section */
+.scroll-reveal-body {
+  font-family: var(--font-body);
+  font-size: 16px;
+  color: #f0ece0;
+  line-height: 1.8;
+}
+
+.scroll-reveal-body-sm {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: #f0ece0;
+  line-height: 1.75;
+}

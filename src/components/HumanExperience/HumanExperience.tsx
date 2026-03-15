@@ -1,6 +1,7 @@
 "use client";
 
 import RevealOnScroll from "@/components/ui/RevealOnScroll";
+import ScrollReveal from "@/components/ui/ScrollReveal";
 
 export default function HumanExperience() {
   return (
@@ -105,39 +106,34 @@ export default function HumanExperience() {
           </RevealOnScroll>
 
           {/* Body 1 */}
-          <RevealOnScroll delay={0.2}>
-            <p
-              style={{
-                fontFamily: "var(--font-body)",
-                fontSize: "16px",
-                color: "#7a7a8a",
-                lineHeight: 1.8,
-                marginBottom: "20px",
-              }}
+          <div style={{ marginBottom: "20px" }}>
+            <ScrollReveal
+              baseOpacity={0.1}
+              enableBlur
+              baseRotation={1}
+              blurStrength={3}
+              rotationEnd="center center"
+              wordAnimationEnd="center center"
+              textClassName="scroll-reveal-body"
             >
-              AI made shipping easy. So everyone shipped. Faster briefs, faster
-              code, faster launches — and somewhere in that speed, the soul got
-              cut from the sprint.
-            </p>
-          </RevealOnScroll>
+              AI made shipping easy. So everyone shipped. Faster briefs, faster code, faster launches — and somewhere in that speed, the soul got cut from the sprint.
+            </ScrollReveal>
+          </div>
 
           {/* Body 2 */}
-          <RevealOnScroll delay={0.3}>
-            <p
-              style={{
-                fontFamily: "var(--font-body)",
-                fontSize: "16px",
-                color: "#7a7a8a",
-                lineHeight: 1.8,
-                marginBottom: "40px",
-              }}
+          <div style={{ marginBottom: "40px" }}>
+            <ScrollReveal
+              baseOpacity={0.1}
+              enableBlur
+              baseRotation={1}
+              blurStrength={3}
+              rotationEnd="center center"
+              wordAnimationEnd="center center"
+              textClassName="scroll-reveal-body"
             >
-              What&apos;s missing isn&apos;t features. It&apos;s the obsessive
-              typographer who spent a week on one heading. The designer who felt
-              the button before they built it. The engineer who cared about the
-              empty state.
-            </p>
-          </RevealOnScroll>
+              What's missing isn't features. It's the obsessive typographer who spent a week on one heading. The designer who felt the button before they built it. The engineer who cared about the empty state.
+            </ScrollReveal>
+          </div>
 
           {/* Blockquote */}
           <RevealOnScroll delay={0.4}>
@@ -348,27 +344,26 @@ export default function HumanExperience() {
           </h3>
 
           {/* Body */}
-          <p
-            style={{
-              fontFamily: "var(--font-body)",
-              fontSize: "14px",
-              lineHeight: 1.75,
-              color: "#5a5a7a",
-              marginBottom: "28px",
-              marginTop: 0,
-            }}
-          >
-            ROV brings the craft back. Brand systems built with intention. UI
-            that has personality. Design that makes users feel something —
-            before they read a single word. Every product that comes out of
-            this community deserves that.
-          </p>
+          <div style={{ marginBottom: "28px" }}>
+            <ScrollReveal
+              baseOpacity={0.1}
+              enableBlur
+              baseRotation={1}
+              blurStrength={3}
+              rotationEnd="center center"
+              wordAnimationEnd="center center"
+              textClassName="scroll-reveal-body-sm"
+            >
+              ROV brings the craft back. Brand systems built with intention. UI that has personality. Design that makes users feel something — before they read a single word. Every product that comes out of this community deserves that.
+            </ScrollReveal>
+          </div>
 
           {/* Split pill CTA */}
           <a
-            href="https://rangeofview.com"
+            href="https://www.rovstudios.com/"
             target="_blank"
             rel="noopener noreferrer"
+            className="rov-cta"
             style={{
               display: "inline-flex",
               alignItems: "center",
@@ -376,6 +371,21 @@ export default function HumanExperience() {
               border: "1px solid rgba(212,130,26,0.3)",
               overflow: "hidden",
               textDecoration: "none",
+              transition: "border-color 0.3s, box-shadow 0.3s, transform 0.3s",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.borderColor = "rgba(212,130,26,0.6)";
+              e.currentTarget.style.boxShadow = "0 0 20px rgba(212,130,26,0.15)";
+              e.currentTarget.style.transform = "translateY(-1px)";
+              const arrow = e.currentTarget.querySelector<HTMLElement>(".rov-cta-arrow");
+              if (arrow) arrow.style.transform = "translateX(3px)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.borderColor = "rgba(212,130,26,0.3)";
+              e.currentTarget.style.boxShadow = "none";
+              e.currentTarget.style.transform = "translateY(0)";
+              const arrow = e.currentTarget.querySelector<HTMLElement>(".rov-cta-arrow");
+              if (arrow) arrow.style.transform = "translateX(0)";
             }}
           >
             <span
@@ -386,6 +396,7 @@ export default function HumanExperience() {
                 fontFamily: "var(--font-body)",
                 fontSize: "13px",
                 fontWeight: 600,
+                transition: "background 0.3s",
               }}
             >
               See the work ↗
@@ -398,9 +409,11 @@ export default function HumanExperience() {
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
+                transition: "background 0.3s",
               }}
             >
               <svg
+                className="rov-cta-arrow"
                 width="14"
                 height="14"
                 viewBox="0 0 24 24"
@@ -409,6 +422,7 @@ export default function HumanExperience() {
                 strokeWidth="2.5"
                 strokeLinecap="round"
                 strokeLinejoin="round"
+                style={{ transition: "transform 0.3s" }}
               >
                 <path d="M5 12h14M12 5l7 7-7 7" />
               </svg>
@@ -437,6 +451,18 @@ export default function HumanExperience() {
               display: "flex",
               alignItems: "flex-start",
               gap: "14px",
+              transition: "border-color 0.3s, transform 0.3s, box-shadow 0.3s",
+              cursor: "default",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.borderColor = "rgba(212,130,26,0.35)";
+              e.currentTarget.style.transform = "translateY(-2px)";
+              e.currentTarget.style.boxShadow = "0 4px 20px rgba(212,130,26,0.08)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.borderColor = "#1e1e2a";
+              e.currentTarget.style.transform = "translateY(0)";
+              e.currentTarget.style.boxShadow = "none";
             }}
           >
             <div
@@ -475,6 +501,18 @@ export default function HumanExperience() {
               display: "flex",
               alignItems: "flex-start",
               gap: "14px",
+              transition: "border-color 0.3s, transform 0.3s, box-shadow 0.3s",
+              cursor: "default",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.borderColor = "rgba(143,163,204,0.35)";
+              e.currentTarget.style.transform = "translateY(-2px)";
+              e.currentTarget.style.boxShadow = "0 4px 20px rgba(143,163,204,0.08)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.borderColor = "#1e1e2a";
+              e.currentTarget.style.transform = "translateY(0)";
+              e.currentTarget.style.boxShadow = "none";
             }}
           >
             <div
@@ -513,6 +551,18 @@ export default function HumanExperience() {
               display: "flex",
               alignItems: "flex-start",
               gap: "14px",
+              transition: "border-color 0.3s, transform 0.3s, box-shadow 0.3s",
+              cursor: "default",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.borderColor = "rgba(93,202,165,0.35)";
+              e.currentTarget.style.transform = "translateY(-2px)";
+              e.currentTarget.style.boxShadow = "0 4px 20px rgba(93,202,165,0.08)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.borderColor = "#1e1e2a";
+              e.currentTarget.style.transform = "translateY(0)";
+              e.currentTarget.style.boxShadow = "none";
             }}
           >
             <div
@@ -550,6 +600,18 @@ export default function HumanExperience() {
               padding: "14px 20px",
               display: "flex",
               alignItems: "center",
+              transition: "border-color 0.3s, box-shadow 0.3s, background 0.3s",
+              cursor: "default",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.borderColor = "rgba(212,130,26,0.45)";
+              e.currentTarget.style.boxShadow = "0 4px 24px rgba(212,130,26,0.1)";
+              e.currentTarget.style.background = "#1a1208";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.borderColor = "rgba(212,130,26,0.2)";
+              e.currentTarget.style.boxShadow = "none";
+              e.currentTarget.style.background = "#130e06";
             }}
           >
             <span

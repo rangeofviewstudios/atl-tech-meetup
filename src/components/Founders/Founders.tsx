@@ -101,7 +101,7 @@ export default function Founders() {
                 fontFamily: "var(--font-body)",
                 fontSize: "15px",
                 lineHeight: 1.75,
-                color: "#4a4a5a",
+                color: "#9a9aaa",
                 maxWidth: "340px",
                 margin: 0,
                 marginBottom: "8px",
