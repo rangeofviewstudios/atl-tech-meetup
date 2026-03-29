@@ -94,11 +94,11 @@ export const SPEAKERS = [
 
 export const FOUNDERS = [
   {
-    name: "Andrew Schiller",
+    name: "Andrew Schillinger",
     role: "FOUNDER",
     image: "/images/schiller.jpg",
     fallbackGradient: "linear-gradient(160deg, #2a1008 0%, #1a0c18 50%, #07070d 100%)",
-    bio: "Started ATM because Atlanta deserved a tech community built on real talk, not pitch decks. Every format, every agenda — his obsession.",
+    bio: "Andrew started ATM because he felt Atlanta deserved a tech community built on real conversations, not pitch decks. He's hands-on with every format and agenda, always looking for ways to make each meetup better than the last.",
     quote: "The vibe is the product.",
     quoteColor: "#3d2510",
     roleColor: "#d4821a",
@@ -110,7 +110,7 @@ export const FOUNDERS = [
     role: "CO-FOUNDER",
     image: "/images/ad2.jpg",
     fallbackGradient: "linear-gradient(160deg, #071030 0%, #0d1520 50%, #07070d 100%)",
-    bio: "The infrastructure behind the community. A connector by nature, engineer by trade — she makes sure every person walks in feeling like they already belong.",
+    bio: "A.D. is the infrastructure behind the community. A natural connector and engineer by trade, she makes sure every person who walks through the door feels like they already belong.",
     quote: "Community is infrastructure.",
     quoteColor: "#1a2035",
     roleColor: "#8fa3cc",
@@ -119,7 +119,7 @@ export const FOUNDERS = [
   },
 ];
 
-export const MEETUP_URL = "https://www.meetup.com/atl-tech-meetup/";
+export const MEETUP_URL = "https://www.meetup.com/atl-technology-meetup-group/";
 
 export const SOCIAL_LINKS = [
   { label: "Meetup", href: "https://www.meetup.com/atl-tech-meetup/" },

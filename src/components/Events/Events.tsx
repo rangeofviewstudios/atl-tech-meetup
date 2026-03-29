@@ -4,6 +4,7 @@ import { useState } from "react";
 import { motion } from "motion/react";
 import { MapPin, ArrowRight, CalendarPlus } from "lucide-react";
 import RevealOnScroll from "@/components/ui/RevealOnScroll";
+import GlowButton from "@/components/ui/GlowButton";
 import { UPCOMING_EVENT, PAST_EVENTS, MEETUP_URL } from "@/lib/constants";
 
 type Tab = "upcoming" | "past";
@@ -352,29 +353,24 @@ export default function Events() {
                   gap: "24px",
                 }}
               >
-                <a
+                <GlowButton
                   href={MEETUP_URL}
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="inline-flex items-center gap-3 whitespace-nowrap font-[var(--font-body)] font-bold text-sm tracking-wide rounded-full"
                   style={{
-                    display: "inline-flex",
-                    alignItems: "center",
-                    gap: "8px",
-                    background: "#d4821a",
-                    color: "#07070d",
+                    background: "rgba(255,255,255,0.12)",
+                    color: "#F4F1EC",
+                    border: "1px solid rgba(255,255,255,0.22)",
+                    backdropFilter: "blur(20px)",
+                    WebkitBackdropFilter: "blur(20px)",
                     padding: "15px 32px",
-                    borderRadius: "999px",
-                    fontFamily: "var(--font-body)",
-                    fontSize: "14px",
-                    fontWeight: 700,
+                    minWidth: "fit-content",
                     textDecoration: "none",
-                    whiteSpace: "nowrap",
-                    transition: "transform 0.2s, box-shadow 0.2s",
                   }}
                 >
                   RSVP Now
-                  <ArrowRight size={15} strokeWidth={2.5} />
-                </a>
+                </GlowButton>
                 <a
                   href="#"
                   style={{

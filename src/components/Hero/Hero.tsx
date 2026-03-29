@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "motion/react";
-import { ArrowRight } from "lucide-react";
 import { MEETUP_URL } from "@/lib/constants";
 import GlowButton from "@/components/ui/GlowButton";
 
@@ -117,16 +116,18 @@ export default function Hero() {
             href={MEETUP_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 rounded-full bg-accent text-black font-[var(--font-body)] font-semibold text-base tracking-wide whitespace-nowrap"
-            style={{ padding: "14px 28px", minWidth: "fit-content" }}
+            className="inline-flex items-center gap-3 rounded-full font-[var(--font-body)] font-semibold text-base tracking-wide whitespace-nowrap"
+            style={{
+              background: "rgba(255,255,255,0.12)",
+              color: "#F4F1EC",
+              border: "1px solid rgba(255,255,255,0.22)",
+              backdropFilter: "blur(20px)",
+              WebkitBackdropFilter: "blur(20px)",
+              padding: "14px 28px",
+              minWidth: "fit-content",
+            }}
           >
-            <span>RSVP Now</span>
-            <motion.span
-              animate={{ x: [0, 4, 0] }}
-              transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
-            >
-              <ArrowRight size={16} strokeWidth={2.5} />
-            </motion.span>
+            RSVP Now
           </GlowButton>
         </div>
       </motion.div>

@@ -1,6 +1,5 @@
 "use client";
 
-import { ArrowRight } from "lucide-react";
 import SplitText from "@/components/ui/SplitText";
 import MagneticButton from "@/components/ui/MagneticButton";
 import RevealOnScroll from "@/components/ui/RevealOnScroll";
@@ -49,10 +48,11 @@ export default function JoinCTA() {
         </RevealOnScroll>
 
         <RevealOnScroll delay={0.6}>
-          <MagneticButton href={MEETUP_URL} variant="filled" className="!bg-[var(--text-primary)] !text-black !px-10 !py-5 !text-lg !font-semibold !rounded-full hover:!shadow-[0_0_40px_rgba(244,241,236,0.15)]">
-            <span className="inline-flex items-center justify-center w-10 h-10 bg-black text-[var(--text-primary)] rounded-xl mr-3">
-              <ArrowRight size={18} />
-            </span>
+          <MagneticButton
+            href={MEETUP_URL}
+            variant="filled"
+            className="!bg-[rgba(255,255,255,0.12)] !text-[#F4F1EC] !px-10 !py-5 !text-lg !font-semibold !rounded-full !border !border-[rgba(255,255,255,0.22)] !backdrop-blur-[20px] hover:!shadow-[0_0_40px_rgba(249,133,19,0.15)]"
+          >
             Join the Meetup
           </MagneticButton>
         </RevealOnScroll>

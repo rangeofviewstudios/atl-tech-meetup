@@ -1,6 +1,5 @@
 "use client";
 
-import { ArrowRight } from "lucide-react";
 import GlowButton from "@/components/ui/GlowButton";
 import { NAV_LINKS, SOCIAL_LINKS, MEETUP_URL } from "@/lib/constants";
 
@@ -103,24 +102,8 @@ export default function Footer() {
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 whitespace-nowrap font-[var(--font-body)] font-semibold text-lg tracking-wide rounded-full"
-            style={{ background: "rgba(255,255,255,0.12)", color: "#F4F1EC", border: "1px solid rgba(255,255,255,0.22)", backdropFilter: "blur(20px)", WebkitBackdropFilter: "blur(20px)", padding: "14px 28px", minWidth: "fit-content" }}
+            style={{ background: "rgba(255,255,255,0.12)", color: "#F4F1EC", border: "1px solid rgba(255,255,255,0.22)", backdropFilter: "blur(20px)", WebkitBackdropFilter: "blur(20px)", padding: "14px 32px", minWidth: "fit-content" }}
           >
-            <span
-              style={{
-                display: "inline-flex",
-                alignItems: "center",
-                justifyContent: "center",
-                width: "40px",
-                height: "40px",
-                background: "#F98513",
-                color: "#fff",
-                borderRadius: "10px",
-                marginRight: "8px",
-                flexShrink: 0,
-              }}
-            >
-              <ArrowRight size={18} />
-            </span>
             Join the Meetup
           </GlowButton>
         </div>

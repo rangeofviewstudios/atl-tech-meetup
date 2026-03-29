@@ -74,11 +74,18 @@ export default function Navigation() {
               href={MEETUP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full bg-accent text-black text-sm font-semibold whitespace-nowrap"
-              style={{ padding: "10px 22px", minWidth: "fit-content" }}
+              className="inline-flex items-center gap-2 rounded-full text-sm font-semibold whitespace-nowrap"
+              style={{
+                background: "rgba(255,255,255,0.12)",
+                color: "#F4F1EC",
+                border: "1px solid rgba(255,255,255,0.22)",
+                backdropFilter: "blur(20px)",
+                WebkitBackdropFilter: "blur(20px)",
+                padding: "10px 22px",
+                minWidth: "fit-content",
+              }}
             >
               Join Us
-              <ArrowRight size={13} strokeWidth={2.5} />
             </GlowButton>
           </div>
 
@@ -132,10 +139,16 @@ export default function Navigation() {
                 duration: 0.4,
                 delay: NAV_LINKS.length * 0.08,
               }}
-              className="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-accent text-black text-lg font-semibold mt-4 hover:shadow-[0_0_40px_var(--accent-glow)] transition-all duration-300"
+              className="inline-flex items-center gap-3 px-8 py-4 rounded-full text-lg font-semibold mt-4 hover:shadow-[0_0_40px_rgba(249,133,19,0.15)] transition-all duration-300"
+              style={{
+                background: "rgba(255,255,255,0.12)",
+                color: "#F4F1EC",
+                border: "1px solid rgba(255,255,255,0.22)",
+                backdropFilter: "blur(20px)",
+                WebkitBackdropFilter: "blur(20px)",
+              }}
             >
               Join Us
-              <ArrowRight size={18} />
             </motion.a>
           </motion.div>
         )}
