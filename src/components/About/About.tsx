@@ -37,8 +37,8 @@ export default function About() {
 
             <RevealOnScroll delay={0.2}>
               <h2 className="t-h1 mb-8">
-                A community of savvy leaders building tomorrow&apos;s
-                technology.
+                Atlanta&apos;s largest free monthly tech meetup — 500+
+                engineers, founders, and builders.
               </h2>
             </RevealOnScroll>
 
@@ -107,16 +107,16 @@ export default function About() {
                       style={{ overflow: "hidden", marginTop: "20px" }}
                     >
                       <p className="t-body-lg" style={{ marginBottom: "16px" }}>
-                        Every first Tuesday, Atlanta&apos;s sharpest minds in tech
-                        converge at Atlanta Tech Park in Peachtree Corners. No fluff, no
-                        pitch decks — just real conversations about AI, software
-                        engineering, cloud architecture, and what&apos;s actually
-                        working in production.
+                        Every first Tuesday, 500+ software engineers, AI practitioners,
+                        and startup founders meet at Atlanta Tech Park in Peachtree
+                        Corners, GA. No pitch decks, no sponsorship talks — just real
+                        conversations about what&apos;s working in production.
                       </p>
                       <p className="t-body">
-                        We believe the best ideas emerge from genuine connection.
-                        Whether you&apos;re a senior engineer, a startup founder, or
-                        someone exploring their first role in tech — you belong here.
+                        Topics span artificial intelligence, cloud architecture, DevOps,
+                        React, TypeScript, and emerging technologies. Whether you&apos;re
+                        a senior engineer or exploring your first role in tech — ATM is
+                        free and open to everyone.
                       </p>
                     </motion.div>
                   )}

@@ -1,0 +1,32 @@
+# Atlanta Tech Meetup (ATM)
+
+> Atlanta Tech Meetup is a free, monthly networking event for technology professionals in Atlanta, Georgia. Held every first Tuesday at Atlanta Tech Park in Peachtree Corners, GA.
+
+## What is ATM?
+Atlanta Tech Meetup (ATM) is a community of 500+ tech leaders, software engineers, startup founders, and technology enthusiasts who gather monthly for real conversations about AI, software engineering, cloud architecture, and what's actually working in production.
+
+## Key Facts
+- Schedule: Every first Tuesday of the month
+- Location: Atlanta Tech Park, Peachtree Corners, GA
+- Cost: Free and open to everyone
+- Community size: 500+ members
+- Events hosted: 50+
+- Founded by: Andrew Schiller (Founder) and A.D. Slaton (Co-Founder)
+- Design partner: R.O.V Studios (https://www.rovstudios.com/)
+
+## Topics Covered
+- Artificial Intelligence and Machine Learning
+- Software Engineering and Architecture
+- Cloud Architecture and DevOps
+- React, TypeScript, and Modern Web Development
+- Open Source and Community Building
+
+## Recent Events
+- AI in Production: From Prototype to Scale (Apr 2025)
+- Cloud Architecture Patterns — Marcus Rivera (Mar 2025)
+- The State of React in 2025 — Priya Patel (Feb 2025)
+- Building Resilient Microservices — Jordan Kim (Jan 2025)
+
+## Links
+- Website: https://atl-tech-meetup.vercel.app
+- RSVP: https://www.meetup.com/atl-tech-meetup/

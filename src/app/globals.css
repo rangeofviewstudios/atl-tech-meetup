@@ -368,6 +368,19 @@ body {
 }
 
 /* ═══════════════════════════════════════════
+   FOUNDERS SHINE EFFECT
+   ═══════════════════════════════════════════ */
+
+@keyframes shine-sweep {
+  0% { background-position: 200% center; }
+  100% { background-position: -200% center; }
+}
+
+.founders-shine {
+  animation: shine-sweep 4s ease-in-out infinite;
+}
+
+/* ═══════════════════════════════════════════
    SCROLLBAR
    ═══════════════════════════════════════════ */
 
@@ -420,11 +433,23 @@ body.menu-open {
     padding-bottom: 64px !important;
   }
 
+  /* ── Typography — loosen tight letter-spacing on small screens ── */
+  #founders h2[style] {
+    letter-spacing: -1px !important;
+    font-size: clamp(36px, 9vw, 48px) !important;
+  }
+
+  #events h2[style] {
+    letter-spacing: -2px !important;
+    font-size: clamp(40px, 10vw, 56px) !important;
+  }
+
   /* ── Founders Section ── */
   .founders-header-wrap,
   .founders-cards-wrap {
     padding-left: 24px !important;
     padding-right: 24px !important;
+    padding-top: 64px !important;
   }
 
   .founders-header {
@@ -451,7 +476,16 @@ body.menu-open {
     height: 400px !important;
   }
 
+  /* Founder card content overlay */
+  #founders div[style*="padding: 36px 40px"] {
+    padding: 24px 20px !important;
+  }
+
   /* ── Human Experience Section ── */
+  #human h2[style] {
+    font-size: clamp(28px, 7vw, 40px) !important;
+  }
+
   .human-layout {
     flex-direction: column !important;
     gap: 40px !important;
@@ -539,9 +573,9 @@ body.menu-open {
   }
 
   /* Footer CTA heading size */
-  .footer-cta h2,
   .footer-cta p[style*="clamp"] {
-    font-size: clamp(1.8rem, 8vw, 3rem) !important;
+    font-size: clamp(1.6rem, 7vw, 2.8rem) !important;
+    letter-spacing: -0.02em !important;
   }
 
   /* ROV logo in footer — slightly smaller */
@@ -553,12 +587,37 @@ body.menu-open {
 /* ── Smaller phones (≤ 480px) ── */
 @media (max-width: 480px) {
 
+  /* Tighten display type further */
+  .t-h1 {
+    font-size: clamp(1.6rem, 7vw, 2.5rem) !important;
+    letter-spacing: -0.01em !important;
+  }
+
+  #founders h2[style] {
+    font-size: clamp(30px, 8vw, 40px) !important;
+    letter-spacing: -0.5px !important;
+  }
+
+  #events h2[style] {
+    font-size: clamp(32px, 9vw, 44px) !important;
+    letter-spacing: -1px !important;
+  }
+
   .founder-image {
     height: 320px !important;
   }
 
   .human-collage {
     height: 280px !important;
+  }
+
+  /* ROV showcase card padding */
+  .rov-cards {
+    width: 100% !important;
+  }
+
+  .rov-cards > div[style*="padding: 32px"] {
+    padding: 24px 20px 0 !important;
   }
 }
 

@@ -102,8 +102,7 @@ export const FOUNDERS = [
     quote: "The vibe is the product.",
     quoteColor: "#3d2510",
     roleColor: "#d4821a",
-    linkedin: "https://linkedin.com",
-    x: "https://x.com",
+    linkedin: "https://www.linkedin.com/in/andrew-schillinger/",
   },
   {
     name: "A.D. Slaton",
@@ -114,8 +113,7 @@ export const FOUNDERS = [
     quote: "Community is infrastructure.",
     quoteColor: "#1a2035",
     roleColor: "#8fa3cc",
-    linkedin: "https://linkedin.com",
-    x: "https://x.com",
+    linkedin: "https://www.linkedin.com/in/adslaton/",
   },
 ];
 

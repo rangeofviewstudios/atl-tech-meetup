@@ -61,7 +61,7 @@ export default function Footer() {
           >
             Every First Tuesday · Peachtree Corners, GA
           </p>
-          <h2
+          <p
             style={{
               fontFamily: "var(--font-display)",
               fontWeight: 700,
@@ -73,7 +73,7 @@ export default function Footer() {
             }}
           >
             Connect. Learn. Build.
-          </h2>
+          </p>
           <p
             style={{
               fontFamily: "var(--font-display)",
@@ -142,9 +142,9 @@ export default function Footer() {
                 marginBottom: "20px",
               }}
             >
-              Your community for tech in Atlanta.
+              Atlanta&apos;s free monthly tech meetup.
               <br />
-              Completely open. Always free.
+              Every first Tuesday.
             </p>
             <div style={{ width: "32px", height: "1px", background: "rgba(155,172,216,0.3)", marginBottom: "20px" }} />
             <a

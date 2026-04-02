@@ -6,15 +6,6 @@ import DecryptedText from "@/components/ui/DecryptedText";
 import { GlowCard } from "@/components/ui/spotlight-card";
 import { FOUNDERS } from "@/lib/constants";
 
-/* Simple X / Twitter icon (no lucide equivalent) */
-function XIcon({ size = 14 }: { size?: number }) {
-  return (
-    <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor">
-      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-    </svg>
-  );
-}
-
 export default function Founders() {
   const borderRadii = [
     "20px 0 0 20px",
@@ -83,9 +74,13 @@ export default function Founders() {
               >
                 Built by people<br />who actually<br />
                 <span
+                  className="founders-shine"
                   style={{
-                    color: "#222",
-                    WebkitTextStroke: "1px #2a2a35",
+                    background: "linear-gradient(90deg, #2a2a35 0%, #5a5a6a 35%, #9a9aaa 50%, #5a5a6a 65%, #2a2a35 100%)",
+                    backgroundSize: "200% 100%",
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
+                    backgroundClip: "text",
                   }}
                 >
                   show up.
@@ -293,29 +288,6 @@ export default function Founders() {
                           }}
                         >
                           <Linkedin size={13} />
-                        </a>
-                        <a
-                          href={founder.x}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          aria-label={`${founder.name} on X`}
-                          style={{
-                            width: "32px",
-                            height: "32px",
-                            borderRadius: "50%",
-                            border: "1px solid #1e1e2a",
-                            background: "rgba(7,7,13,0.6)",
-                            backdropFilter: "blur(4px)",
-                            WebkitBackdropFilter: "blur(4px)",
-                            display: "flex",
-                            alignItems: "center",
-                            justifyContent: "center",
-                            color: "#8a8a9a",
-                            textDecoration: "none",
-                            transition: "border-color 0.3s, color 0.3s",
-                          }}
-                        >
-                          <XIcon size={13} />
                         </a>
                       </div>
 

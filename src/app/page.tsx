@@ -6,6 +6,7 @@ import HumanExperience from "@/components/HumanExperience/HumanExperience";
 import Events from "@/components/Events/Events";
 import Gallery from "@/components/Gallery/Gallery";
 import Footer from "@/components/Footer/Footer";
+import StructuredData from "@/components/StructuredData";
 
 export default function Home() {
   return (
@@ -13,11 +14,12 @@ export default function Home() {
       <Navigation />
       <main>
         <Hero />
+        <Events />
         <About />
         <HumanExperience />
-        <Events />
         <Gallery />
         <Founders />
+        <StructuredData />
       </main>
       <Footer />
     </>

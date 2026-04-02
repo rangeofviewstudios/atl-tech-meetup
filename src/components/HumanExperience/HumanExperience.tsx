@@ -335,8 +335,7 @@ export default function HumanExperience() {
               fontSize: "clamp(22px, 3vw, 30px)",
               color: "#f0ece0",
               lineHeight: 1.25,
-              marginTop: 0,
-              marginBottom: "20px",
+              margin: "0 0 20px 0",
             }}
           >
             That&apos;s why ATM partners with{" "}
@@ -430,211 +429,179 @@ export default function HumanExperience() {
           </a>
         </div>
 
-        {/* Right side — feature cards */}
+        {/* Right side — ROV showcase card */}
         <div
           className="rov-cards"
           style={{
             flexShrink: 0,
-            display: "flex",
-            flexDirection: "column",
-            gap: "8px",
-            width: "340px",
+            width: "380px",
+            borderRadius: "20px",
+            border: "1px solid rgba(212,130,26,0.15)",
+            background: "linear-gradient(165deg, #12100a 0%, #0d0d18 40%, #0a0a14 100%)",
+            overflow: "hidden",
+            transition: "border-color 0.4s, box-shadow 0.4s",
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.borderColor = "rgba(212,130,26,0.35)";
+            e.currentTarget.style.boxShadow = "0 8px 40px rgba(212,130,26,0.08)";
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.borderColor = "rgba(212,130,26,0.15)";
+            e.currentTarget.style.boxShadow = "none";
           }}
         >
-          {/* Card 1 */}
+          {/* Logo header */}
           <div
             style={{
-              borderRadius: "12px",
-              border: "1px solid #1e1e2a",
-              padding: "16px 20px",
-              background: "#0d0d18",
-              display: "flex",
-              alignItems: "flex-start",
-              gap: "14px",
-              transition: "border-color 0.3s, transform 0.3s, box-shadow 0.3s",
-              cursor: "default",
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.borderColor = "rgba(212,130,26,0.35)";
-              e.currentTarget.style.transform = "translateY(-2px)";
-              e.currentTarget.style.boxShadow = "0 4px 20px rgba(212,130,26,0.08)";
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.borderColor = "#1e1e2a";
-              e.currentTarget.style.transform = "translateY(0)";
-              e.currentTarget.style.boxShadow = "none";
-            }}
-          >
-            <div
-              style={{
-                width: "32px",
-                height: "32px",
-                borderRadius: "8px",
-                background: "rgba(212,130,26,0.1)",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                flexShrink: 0,
-              }}
-            >
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#d4821a" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
-              </svg>
-            </div>
-            <div>
-              <p style={{ fontFamily: "var(--font-body)", fontSize: "13px", fontWeight: 600, color: "#c8c4bc", margin: 0, marginBottom: "4px" }}>
-                Brand &amp; identity systems
-              </p>
-              <p style={{ fontFamily: "var(--font-body)", fontSize: "12px", color: "#3a3a4a", lineHeight: 1.5, margin: 0 }}>
-                Personality baked in from day one — not bolted on after launch.
-              </p>
-            </div>
-          </div>
-
-          {/* Card 2 */}
-          <div
-            style={{
-              borderRadius: "12px",
-              border: "1px solid #1e1e2a",
-              padding: "16px 20px",
-              background: "#0d0d18",
-              display: "flex",
-              alignItems: "flex-start",
-              gap: "14px",
-              transition: "border-color 0.3s, transform 0.3s, box-shadow 0.3s",
-              cursor: "default",
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.borderColor = "rgba(143,163,204,0.35)";
-              e.currentTarget.style.transform = "translateY(-2px)";
-              e.currentTarget.style.boxShadow = "0 4px 20px rgba(143,163,204,0.08)";
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.borderColor = "#1e1e2a";
-              e.currentTarget.style.transform = "translateY(0)";
-              e.currentTarget.style.boxShadow = "none";
-            }}
-          >
-            <div
-              style={{
-                width: "32px",
-                height: "32px",
-                borderRadius: "8px",
-                background: "rgba(143,163,204,0.08)",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                flexShrink: 0,
-              }}
-            >
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#8fa3cc" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <rect x="3" y="3" width="18" height="18" rx="2" /><path d="M3 9h18M9 21V9" />
-              </svg>
-            </div>
-            <div>
-              <p style={{ fontFamily: "var(--font-body)", fontSize: "13px", fontWeight: 600, color: "#c8c4bc", margin: 0, marginBottom: "4px" }}>
-                Human-centered UI
-              </p>
-              <p style={{ fontFamily: "var(--font-body)", fontSize: "12px", color: "#3a3a4a", lineHeight: 1.5, margin: 0 }}>
-                Interfaces designed to be felt, not just used.
-              </p>
-            </div>
-          </div>
-
-          {/* Card 3 */}
-          <div
-            style={{
-              borderRadius: "12px",
-              border: "1px solid #1e1e2a",
-              padding: "16px 20px",
-              background: "#0d0d18",
-              display: "flex",
-              alignItems: "flex-start",
-              gap: "14px",
-              transition: "border-color 0.3s, transform 0.3s, box-shadow 0.3s",
-              cursor: "default",
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.borderColor = "rgba(93,202,165,0.35)";
-              e.currentTarget.style.transform = "translateY(-2px)";
-              e.currentTarget.style.boxShadow = "0 4px 20px rgba(93,202,165,0.08)";
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.borderColor = "#1e1e2a";
-              e.currentTarget.style.transform = "translateY(0)";
-              e.currentTarget.style.boxShadow = "none";
-            }}
-          >
-            <div
-              style={{
-                width: "32px",
-                height: "32px",
-                borderRadius: "8px",
-                background: "rgba(93,202,165,0.08)",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                flexShrink: 0,
-              }}
-            >
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#5dcaa5" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M22 11.08V12a10 10 0 11-5.93-9.14" /><path d="M22 4L12 14.01l-3-3" />
-              </svg>
-            </div>
-            <div>
-              <p style={{ fontFamily: "var(--font-body)", fontSize: "13px", fontWeight: 600, color: "#c8c4bc", margin: 0, marginBottom: "4px" }}>
-                Lasting first impressions
-              </p>
-              <p style={{ fontFamily: "var(--font-body)", fontSize: "12px", color: "#3a3a4a", lineHeight: 1.5, margin: 0 }}>
-                Products that connect with users before the first click.
-              </p>
-            </div>
-          </div>
-
-          {/* Brand strip */}
-          <div
-            style={{
-              background: "#130e06",
-              border: "1px solid rgba(212,130,26,0.2)",
-              borderRadius: "12px",
-              padding: "14px 20px",
+              padding: "32px 32px 0",
               display: "flex",
               alignItems: "center",
-              transition: "border-color 0.3s, box-shadow 0.3s, background 0.3s",
-              cursor: "default",
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.borderColor = "rgba(212,130,26,0.45)";
-              e.currentTarget.style.boxShadow = "0 4px 24px rgba(212,130,26,0.1)";
-              e.currentTarget.style.background = "#1a1208";
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.borderColor = "rgba(212,130,26,0.2)";
-              e.currentTarget.style.boxShadow = "none";
-              e.currentTarget.style.background = "#130e06";
+              gap: "16px",
             }}
           >
-            <span
+            <img
+              src="/images/rovbrownlogo.png"
+              alt="R.O.V Studios"
+              style={{ height: "48px", opacity: 0.9 }}
+            />
+            <div>
+              <p
+                style={{
+                  fontFamily: "var(--font-display)",
+                  fontWeight: 900,
+                  fontSize: "18px",
+                  color: "#d4821a",
+                  margin: 0,
+                  lineHeight: 1.2,
+                }}
+              >
+                R.O.V STUDIOS
+              </p>
+              <p
+                style={{
+                  fontFamily: "var(--font-body)",
+                  fontSize: "11px",
+                  color: "#5a4a2a",
+                  margin: 0,
+                  letterSpacing: "0.08em",
+                  textTransform: "uppercase",
+                  fontWeight: 600,
+                }}
+              >
+                Design partner
+              </p>
+            </div>
+          </div>
+
+          {/* Divider */}
+          <div
+            style={{
+              height: "1px",
+              background: "linear-gradient(90deg, transparent, rgba(212,130,26,0.2) 30%, rgba(212,130,26,0.2) 70%, transparent)",
+              margin: "24px 32px",
+            }}
+          />
+
+          {/* Value props */}
+          <div style={{ padding: "0 32px 28px" }}>
+            <p
               style={{
-                fontFamily: "var(--font-display)",
-                fontWeight: 900,
-                fontSize: "15px",
-                color: "#d4821a",
+                fontFamily: "var(--font-body)",
+                fontSize: "14px",
+                color: "#8a8a9a",
+                lineHeight: 1.7,
+                margin: 0,
+                marginBottom: "24px",
               }}
             >
-              R.O.V Studios
-            </span>
+              The studio behind ATM&apos;s brand. Every pixel on this site was
+              crafted by hand — not generated.
+            </p>
+
+            {[
+              { label: "Brand systems that feel alive", icon: "◆" },
+              { label: "UI with actual personality", icon: "◆" },
+              { label: "Design that earns the first click", icon: "◆" },
+            ].map((item) => (
+              <div
+                key={item.label}
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "12px",
+                  padding: "10px 0",
+                  borderBottom: "1px solid rgba(155,172,216,0.06)",
+                }}
+              >
+                <span
+                  style={{
+                    fontSize: "6px",
+                    color: "#d4821a",
+                    flexShrink: 0,
+                  }}
+                >
+                  {item.icon}
+                </span>
+                <span
+                  style={{
+                    fontFamily: "var(--font-body)",
+                    fontSize: "13px",
+                    fontWeight: 500,
+                    color: "#c8c4bc",
+                  }}
+                >
+                  {item.label}
+                </span>
+              </div>
+            ))}
+          </div>
+
+          {/* CTA footer */}
+          <a
+            href="https://www.rovstudios.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              gap: "8px",
+              padding: "16px 32px",
+              background: "rgba(212,130,26,0.06)",
+              borderTop: "1px solid rgba(212,130,26,0.12)",
+              textDecoration: "none",
+              transition: "background 0.3s",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.background = "rgba(212,130,26,0.12)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.background = "rgba(212,130,26,0.06)";
+            }}
+          >
             <span
               style={{
                 fontFamily: "var(--font-body)",
-                fontSize: "11px",
-                color: "#5a3a10",
-                marginLeft: "auto",
+                fontSize: "13px",
+                fontWeight: 600,
+                color: "#d4821a",
               }}
             >
-              Design partner · ATM
+              See the work
             </span>
-          </div>
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#d4821a"
+              strokeWidth="2.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
         </div>
       </div>
     </section>
