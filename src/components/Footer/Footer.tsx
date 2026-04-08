@@ -90,12 +90,12 @@ export default function Footer() {
           <p
             style={{
               fontFamily: "var(--font-body)",
-              color: "rgba(155,172,216,0.8)",
+              color: "rgba(180,195,230,0.92)",
               fontSize: "1.1rem",
               marginBottom: "36px",
             }}
           >
-            Make networking easier than ever.
+            Walk in a stranger. Leave with a few good people in your corner.
           </p>
           <GlowButton
             href={MEETUP_URL}
@@ -136,7 +136,7 @@ export default function Footer() {
             <p
               style={{
                 fontFamily: "var(--font-body)",
-                color: "rgba(155,172,216,0.7)",
+                color: "rgba(180,195,230,0.85)",
                 fontSize: "1rem",
                 lineHeight: 1.7,
                 marginBottom: "20px",
@@ -153,7 +153,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               style={{
                 fontFamily: "var(--font-body)",
-                color: "rgba(255,255,255,0.5)",
+                color: "rgba(255,255,255,0.7)",
                 fontSize: "0.95rem",
                 textDecoration: "none",
                 transition: "color 0.3s",
@@ -193,7 +193,7 @@ export default function Footer() {
                         rel={link.external ? "noopener noreferrer" : undefined}
                         style={{
                           fontFamily: "var(--font-body)",
-                          color: "rgba(155,172,216,0.6)",
+                          color: "rgba(180,195,230,0.78)",
                           fontSize: "0.95rem",
                           textDecoration: "none",
                           transition: "color 0.3s",
@@ -223,10 +223,10 @@ export default function Footer() {
             alignItems: "center",
           }}
         >
-          <p style={{ fontFamily: "var(--font-body)", fontSize: "0.95rem", color: "rgba(255,255,255,0.25)" }}>
+          <p style={{ fontFamily: "var(--font-body)", fontSize: "0.95rem", color: "rgba(255,255,255,0.45)" }}>
             &copy; {new Date().getFullYear()} Atlanta Tech Meetup. All rights reserved.
           </p>
-          <a href="https://www.rovstudios.com/" target="_blank" rel="noopener noreferrer" style={{ fontFamily: "var(--font-body)", fontSize: "0.95rem", color: "rgba(255,255,255,0.25)", display: "flex", alignItems: "center", gap: "8px", textDecoration: "none" }}>
+          <a href="https://www.rovstudios.com/" target="_blank" rel="noopener noreferrer" style={{ fontFamily: "var(--font-body)", fontSize: "0.95rem", color: "rgba(255,255,255,0.45)", display: "flex", alignItems: "center", gap: "8px", textDecoration: "none" }}>
             Curated with intention by{" "}
             <img src="/images/rovbrownlogo.png" alt="R.O.V Studios" style={{ height: "60px", display: "inline-block", verticalAlign: "baseline", opacity: 1, marginTop: "8px" }} />
           </a>

@@ -37,8 +37,8 @@ export default function About() {
 
             <RevealOnScroll delay={0.2}>
               <h2 className="t-h1 mb-8">
-                Atlanta&apos;s largest free monthly tech meetup — 500+
-                engineers, founders, and builders.
+                Atlanta&apos;s largest free monthly tech meetup. Five hundred
+                engineers, founders, and builders, all in one room.
               </h2>
             </RevealOnScroll>
 
@@ -107,15 +107,17 @@ export default function About() {
                       style={{ overflow: "hidden", marginTop: "20px" }}
                     >
                       <p className="t-body-lg" style={{ marginBottom: "16px" }}>
-                        Every first Tuesday, 500+ software engineers, AI practitioners,
-                        and startup founders meet at Atlanta Tech Park in Peachtree
-                        Corners, GA. No pitch decks, no sponsorship talks — just real
-                        conversations about what&apos;s working in production.
+                        Every first Tuesday, hundreds of software engineers, AI
+                        practitioners, and startup founders show up at Atlanta Tech
+                        Park in Peachtree Corners. No pitch decks, no sponsorship
+                        plugs. Just honest conversations about what&apos;s actually
+                        working in production.
                       </p>
                       <p className="t-body">
-                        Topics span artificial intelligence, cloud architecture, DevOps,
-                        React, TypeScript, and emerging technologies. Whether you&apos;re
-                        a senior engineer or exploring your first role in tech — ATM is
+                        We talk about AI, cloud architecture, DevOps, React,
+                        TypeScript, and whatever else is shaping how we build today.
+                        Whether you&apos;ve been shipping code for a decade or
+                        you&apos;re still figuring out your first role in tech, ATM is
                         free and open to everyone.
                       </p>
                     </motion.div>

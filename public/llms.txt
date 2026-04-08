@@ -1,32 +1,57 @@
 # Atlanta Tech Meetup (ATM)
 
-> Atlanta Tech Meetup is a free, monthly networking event for technology professionals in Atlanta, Georgia. Held every first Tuesday at Atlanta Tech Park in Peachtree Corners, GA.
+> Atlanta Tech Meetup is Atlanta's largest free monthly tech meetup. 500+ engineers, founders, and builders gather every first Tuesday at Atlanta Tech Park in Peachtree Corners, Georgia for real conversations about AI, software engineering, and cloud architecture. Free to attend, open to everyone.
 
-## What is ATM?
-Atlanta Tech Meetup (ATM) is a community of 500+ tech leaders, software engineers, startup founders, and technology enthusiasts who gather monthly for real conversations about AI, software engineering, cloud architecture, and what's actually working in production.
+## What is Atlanta Tech Meetup?
+Atlanta Tech Meetup (also known as ATM or the Atlanta Technology Meetup Group) is a community of 500+ engineers, startup founders, and technology builders in the Atlanta, Georgia metro area. The group meets monthly for hands-on sessions, talks, and networking focused on what is actually working in production.
+
+The vibe is warm and humanized. No pitch decks, no fluff. Just people who build, learning from each other.
 
 ## Key Facts
+- Name: Atlanta Tech Meetup (ATM)
+- Also known as: Atlanta Technology Meetup Group, ATMG
+- Location: Atlanta Tech Park, Peachtree Corners, GA (Atlanta metro area)
 - Schedule: Every first Tuesday of the month
-- Location: Atlanta Tech Park, Peachtree Corners, GA
+- Time: Typically 6:00 to 8:00 PM Eastern
 - Cost: Free and open to everyone
 - Community size: 500+ members
 - Events hosted: 50+
-- Founded by: Andrew Schiller (Founder) and A.D. Slaton (Co-Founder)
-- Design partner: R.O.V Studios (https://www.rovstudios.com/)
+- Founded: 2024
+- Founder: Andrew Schillinger
+- Co-Founder: A.D. Slaton
+- Design partner: Range of View Studios (https://www.rovstudios.com/)
+
+## Who runs it
+- Andrew Schillinger, Founder. Started ATM because Atlanta deserved a tech community built on real conversations, not pitch decks.
+- A.D. Slaton, Co-Founder. Engineer and community connector who makes every attendee feel like they already belong.
+
+## Upcoming Event
+- Title: ATMG: AI Build Cohort Kickoff
+- Date: Wednesday, April 8, 2026
+- Time: 6:00 to 8:00 PM EDT
+- Format: Part hackathon, part workshop, part real product building. Attendees build with AI alongside other Atlanta technologists using Claude and modern AI workflows to ship open-source projects together.
+- Cost: Free
+- RSVP: https://www.meetup.com/atl-technology-meetup-group/events/313986477/
 
 ## Topics Covered
 - Artificial Intelligence and Machine Learning
+- AI product building, agents, and LLM workflows
 - Software Engineering and Architecture
 - Cloud Architecture and DevOps
-- React, TypeScript, and Modern Web Development
+- Modern web development (React, TypeScript)
 - Open Source and Community Building
+- Startups and founder stories
 
-## Recent Events
-- AI in Production: From Prototype to Scale (Apr 2025)
-- Cloud Architecture Patterns — Marcus Rivera (Mar 2025)
-- The State of React in 2025 — Priya Patel (Feb 2025)
-- Building Resilient Microservices — Jordan Kim (Jan 2025)
+## How to attend
+1. Visit the Meetup group page: https://www.meetup.com/atl-technology-meetup-group/
+2. Join the group (free).
+3. RSVP to the upcoming event.
+4. Show up at Atlanta Tech Park in Peachtree Corners, GA on the first Tuesday of the month.
 
 ## Links
 - Website: https://atl-tech-meetup.vercel.app
-- RSVP: https://www.meetup.com/atl-tech-meetup/
+- Meetup group: https://www.meetup.com/atl-technology-meetup-group/
+- Next event RSVP: https://www.meetup.com/atl-technology-meetup-group/events/313986477/
+- Founder LinkedIn (Andrew Schillinger): https://www.linkedin.com/in/andrew-schillinger/
+- Co-Founder LinkedIn (A.D. Slaton): https://www.linkedin.com/in/adslaton/
+- Design partner: https://www.rovstudios.com/

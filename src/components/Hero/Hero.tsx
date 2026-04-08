@@ -26,59 +26,67 @@ export default function Hero() {
 
       {/* Giant Typography — fills viewport */}
       <div className="absolute inset-0 z-10 flex items-center justify-center px-4">
-        <div className="text-center w-full">
-          <div className="overflow-hidden">
-            <motion.h1
-              initial={{ y: "110%" }}
-              animate={{ y: "0%" }}
-              transition={{
-                duration: 1,
-                delay: 0.2,
-                ease: [0.16, 1, 0.3, 1],
-              }}
-              className="font-[var(--font-display)] font-bold text-white leading-[0.88] tracking-[-0.04em]"
-              style={{
-                fontSize: "clamp(4rem, 15vw, 16rem)",
-              }}
-            >
-              Atlanta
-            </motion.h1>
-          </div>
-          <div className="overflow-hidden mt-[-0.02em]">
-            <motion.h1
-              initial={{ y: "110%" }}
-              animate={{ y: "0%" }}
-              transition={{
-                duration: 1,
-                delay: 0.35,
-                ease: [0.16, 1, 0.3, 1],
-              }}
-              className="font-[var(--font-display)] font-bold text-white leading-[0.88] tracking-[-0.04em]"
-              style={{
-                fontSize: "clamp(4rem, 15vw, 16rem)",
-              }}
-            >
-              Tech
-            </motion.h1>
-          </div>
-          <div className="overflow-hidden mt-[-0.02em]">
-            <motion.h1
-              initial={{ y: "110%" }}
-              animate={{ y: "0%" }}
-              transition={{
-                duration: 1,
-                delay: 0.5,
-                ease: [0.16, 1, 0.3, 1],
-              }}
-              className="font-[var(--font-display)] font-bold text-white leading-[0.88] tracking-[-0.04em]"
-              style={{
-                fontSize: "clamp(4rem, 15vw, 16rem)",
-              }}
-            >
-              Meetup
-            </motion.h1>
-          </div>
-        </div>
+        <h1 className="text-center w-full m-0">
+          {/* Accessible label for SEO + screen readers */}
+          <span className="sr-only">
+            Atlanta Tech Meetup. Atlanta&apos;s largest free monthly tech meetup.
+          </span>
+
+          {/* Decorative animated stack */}
+          <span aria-hidden="true" className="block">
+            <span className="block overflow-hidden">
+              <motion.span
+                initial={{ y: "110%" }}
+                animate={{ y: "0%" }}
+                transition={{
+                  duration: 1,
+                  delay: 0.2,
+                  ease: [0.16, 1, 0.3, 1],
+                }}
+                className="block font-[var(--font-display)] font-bold text-white leading-[0.88] tracking-[-0.04em]"
+                style={{
+                  fontSize: "clamp(4rem, 15vw, 16rem)",
+                }}
+              >
+                Atlanta
+              </motion.span>
+            </span>
+            <span className="block overflow-hidden mt-[-0.02em]">
+              <motion.span
+                initial={{ y: "110%" }}
+                animate={{ y: "0%" }}
+                transition={{
+                  duration: 1,
+                  delay: 0.35,
+                  ease: [0.16, 1, 0.3, 1],
+                }}
+                className="block font-[var(--font-display)] font-bold text-white leading-[0.88] tracking-[-0.04em]"
+                style={{
+                  fontSize: "clamp(4rem, 15vw, 16rem)",
+                }}
+              >
+                Tech
+              </motion.span>
+            </span>
+            <span className="block overflow-hidden mt-[-0.02em]">
+              <motion.span
+                initial={{ y: "110%" }}
+                animate={{ y: "0%" }}
+                transition={{
+                  duration: 1,
+                  delay: 0.5,
+                  ease: [0.16, 1, 0.3, 1],
+                }}
+                className="block font-[var(--font-display)] font-bold text-white leading-[0.88] tracking-[-0.04em]"
+                style={{
+                  fontSize: "clamp(4rem, 15vw, 16rem)",
+                }}
+              >
+                Meetup
+              </motion.span>
+            </span>
+          </span>
+        </h1>
       </div>
 
       {/* Bottom bar */}

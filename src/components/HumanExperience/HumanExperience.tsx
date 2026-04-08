@@ -116,7 +116,7 @@ export default function HumanExperience() {
               wordAnimationEnd="center center"
               textClassName="scroll-reveal-body"
             >
-              AI made shipping easy. So everyone shipped. Faster briefs, faster code, faster launches — and somewhere in that speed, the soul got cut from the sprint.
+              AI made shipping easy, so everyone shipped. Faster briefs, faster code, faster launches. Somewhere in all that speed, the soul got cut from the sprint.
             </ScrollReveal>
           </div>
 
@@ -131,7 +131,7 @@ export default function HumanExperience() {
               wordAnimationEnd="center center"
               textClassName="scroll-reveal-body"
             >
-              What's missing isn't features. It's the obsessive typographer who spent a week on one heading. The designer who felt the button before they built it. The engineer who cared about the empty state.
+              What&apos;s missing isn&apos;t features. It&apos;s the obsessive typographer who spent a week on one heading. The designer who felt the button before she built it. The engineer who cared about the empty state.
             </ScrollReveal>
           </div>
 
@@ -189,7 +189,7 @@ export default function HumanExperience() {
               }}
             >
               <img
-                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=500&h=667&fit=crop"
+                src="/images/4.jpg"
                 alt="People collaborating on technology"
                 style={{ width: "100%", height: "100%", objectFit: "cover" }}
               />
@@ -213,7 +213,7 @@ export default function HumanExperience() {
               }}
             >
               <img
-                src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=500&h=667&fit=crop"
+                src="/images/6.jpg"
                 alt="Whiteboarding session"
                 style={{ width: "100%", height: "100%", objectFit: "cover" }}
               />
@@ -288,7 +288,7 @@ export default function HumanExperience() {
           margin: "0 auto",
           display: "flex",
           alignItems: "center",
-          gap: "48px",
+          gap: "72px",
           padding: "56px 80px 120px",
         }}
       >
@@ -299,15 +299,14 @@ export default function HumanExperience() {
             style={{
               display: "flex",
               alignItems: "center",
-              gap: "8px",
-              marginBottom: "20px",
+              gap: "10px",
+              marginBottom: "24px",
             }}
           >
             <span
               style={{
-                width: "6px",
-                height: "6px",
-                borderRadius: "50%",
+                width: "28px",
+                height: "1px",
                 background: "#d4821a",
                 display: "inline-block",
                 flexShrink: 0,
@@ -319,11 +318,11 @@ export default function HumanExperience() {
                 fontSize: "10px",
                 fontWeight: 700,
                 color: "#d4821a",
-                letterSpacing: "0.15em",
+                letterSpacing: "0.2em",
                 textTransform: "uppercase",
               }}
             >
-              THE SOLUTION
+              The studio in our corner
             </span>
           </div>
 
@@ -332,18 +331,29 @@ export default function HumanExperience() {
             style={{
               fontFamily: "var(--font-display)",
               fontWeight: 900,
-              fontSize: "clamp(22px, 3vw, 30px)",
+              fontSize: "clamp(28px, 3.4vw, 42px)",
               color: "#f0ece0",
-              lineHeight: 1.25,
-              margin: "0 0 20px 0",
+              lineHeight: 1.1,
+              letterSpacing: "-0.02em",
+              margin: "0 0 24px 0",
             }}
           >
-            That&apos;s why ATM partners with{" "}
-            <span style={{ color: "#d4821a" }}>Range of View Studios.</span>
+            ATM teamed up with{" "}
+            <span
+              style={{
+                background: "linear-gradient(95deg, #f0ece0 0%, #d4821a 60%, #ffa040 100%)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+                backgroundClip: "text",
+              }}
+            >
+              Range of View Studios
+            </span>{" "}
+            to put the craft back in.
           </h3>
 
           {/* Body */}
-          <div style={{ marginBottom: "28px" }}>
+          <div style={{ marginBottom: "32px" }}>
             <ScrollReveal
               baseOpacity={0.1}
               enableBlur
@@ -353,256 +363,317 @@ export default function HumanExperience() {
               wordAnimationEnd="center center"
               textClassName="scroll-reveal-body-sm"
             >
-              ROV brings the craft back. Brand systems built with intention. UI that has personality. Design that makes users feel something — before they read a single word. Every product that comes out of this community deserves that.
+              Brand systems with intention. UI with personality. Design that makes people feel something before they read a single word. Every product that comes out of this community deserves that kind of care.
             </ScrollReveal>
           </div>
 
-          {/* Split pill CTA */}
-          <a
-            href="https://www.rovstudios.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="rov-cta"
-            style={{
-              display: "inline-flex",
-              alignItems: "center",
-              borderRadius: "999px",
-              border: "1px solid rgba(212,130,26,0.3)",
-              overflow: "hidden",
-              textDecoration: "none",
-              transition: "border-color 0.3s, box-shadow 0.3s, transform 0.3s",
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.borderColor = "rgba(212,130,26,0.6)";
-              e.currentTarget.style.boxShadow = "0 0 20px rgba(212,130,26,0.15)";
-              e.currentTarget.style.transform = "translateY(-1px)";
-              const arrow = e.currentTarget.querySelector<HTMLElement>(".rov-cta-arrow");
-              if (arrow) arrow.style.transform = "translateX(3px)";
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.borderColor = "rgba(212,130,26,0.3)";
-              e.currentTarget.style.boxShadow = "none";
-              e.currentTarget.style.transform = "translateY(0)";
-              const arrow = e.currentTarget.querySelector<HTMLElement>(".rov-cta-arrow");
-              if (arrow) arrow.style.transform = "translateX(0)";
-            }}
-          >
-            <span
-              style={{
-                padding: "11px 20px",
-                color: "#d4821a",
-                background: "rgba(212,130,26,0.06)",
-                fontFamily: "var(--font-body)",
-                fontSize: "13px",
-                fontWeight: 600,
-                transition: "background 0.3s",
-              }}
-            >
-              See the work ↗
-            </span>
-            <span
-              style={{
-                width: "38px",
-                height: "38px",
-                background: "#d4821a",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                transition: "background 0.3s",
-              }}
-            >
-              <svg
-                className="rov-cta-arrow"
-                width="14"
-                height="14"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="#07070d"
-                strokeWidth="2.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                style={{ transition: "transform 0.3s" }}
-              >
-                <path d="M5 12h14M12 5l7 7-7 7" />
-              </svg>
-            </span>
-          </a>
-        </div>
-
-        {/* Right side — ROV showcase card */}
-        <div
-          className="rov-cards"
-          style={{
-            flexShrink: 0,
-            width: "380px",
-            borderRadius: "20px",
-            border: "1px solid rgba(212,130,26,0.15)",
-            background: "linear-gradient(165deg, #12100a 0%, #0d0d18 40%, #0a0a14 100%)",
-            overflow: "hidden",
-            transition: "border-color 0.4s, box-shadow 0.4s",
-          }}
-          onMouseEnter={(e) => {
-            e.currentTarget.style.borderColor = "rgba(212,130,26,0.35)";
-            e.currentTarget.style.boxShadow = "0 8px 40px rgba(212,130,26,0.08)";
-          }}
-          onMouseLeave={(e) => {
-            e.currentTarget.style.borderColor = "rgba(212,130,26,0.15)";
-            e.currentTarget.style.boxShadow = "none";
-          }}
-        >
-          {/* Logo header */}
+          {/* Inline metadata strip */}
           <div
             style={{
-              padding: "32px 32px 0",
               display: "flex",
               alignItems: "center",
-              gap: "16px",
+              gap: "20px",
+              paddingTop: "20px",
+              borderTop: "1px solid rgba(212,130,26,0.15)",
+            }}
+          >
+            <div>
+              <p style={{ fontFamily: "var(--font-display)", fontWeight: 900, fontSize: "22px", color: "#f0ece0", margin: 0, lineHeight: 1, letterSpacing: "-0.02em" }}>
+                100<span style={{ color: "#d4821a" }}>%</span>
+              </p>
+              <p style={{ fontFamily: "var(--font-body)", fontSize: "10px", fontWeight: 600, color: "#a8a8b8", margin: "6px 0 0", letterSpacing: "0.12em", textTransform: "uppercase" }}>
+                Hand built
+              </p>
+            </div>
+            <div style={{ width: "1px", height: "32px", background: "rgba(212,130,26,0.2)" }} />
+            <div>
+              <p style={{ fontFamily: "var(--font-display)", fontWeight: 900, fontSize: "22px", color: "#f0ece0", margin: 0, lineHeight: 1, letterSpacing: "-0.02em" }}>
+                0<span style={{ color: "#d4821a" }}>%</span>
+              </p>
+              <p style={{ fontFamily: "var(--font-body)", fontSize: "10px", fontWeight: 600, color: "#a8a8b8", margin: "6px 0 0", letterSpacing: "0.12em", textTransform: "uppercase" }}>
+                Generated
+              </p>
+            </div>
+            <div style={{ width: "1px", height: "32px", background: "rgba(212,130,26,0.2)" }} />
+            <div>
+              <p style={{ fontFamily: "var(--font-display)", fontWeight: 900, fontSize: "22px", color: "#f0ece0", margin: 0, lineHeight: 1, letterSpacing: "-0.02em" }}>
+                ATL
+              </p>
+              <p style={{ fontFamily: "var(--font-body)", fontSize: "10px", fontWeight: 600, color: "#a8a8b8", margin: "6px 0 0", letterSpacing: "0.12em", textTransform: "uppercase" }}>
+                Based
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Right side — ROV press plate */}
+        <a
+          href="https://www.rovstudios.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="rov-cards rov-plate"
+          style={{
+            flexShrink: 0,
+            width: "420px",
+            position: "relative",
+            borderRadius: "24px",
+            overflow: "hidden",
+            background: "linear-gradient(180deg, #1a1308 0%, #0d0a0e 55%, #07070d 100%)",
+            border: "1px solid rgba(212,130,26,0.2)",
+            boxShadow: "0 24px 80px -20px rgba(0,0,0,0.7), inset 0 1px 0 rgba(255,255,255,0.04)",
+            transition: "transform 0.5s cubic-bezier(0.25,0.46,0.45,0.94), border-color 0.5s, box-shadow 0.5s",
+            textDecoration: "none",
+            display: "block",
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.borderColor = "rgba(249,133,19,0.5)";
+            e.currentTarget.style.transform = "translateY(-6px)";
+            e.currentTarget.style.boxShadow = "0 36px 100px -20px rgba(249,133,19,0.18), inset 0 1px 0 rgba(255,255,255,0.06)";
+            const arrow = e.currentTarget.querySelector<HTMLElement>(".rov-bar-arrow");
+            if (arrow) arrow.style.transform = "translateX(6px)";
+            const orb = e.currentTarget.querySelector<HTMLElement>(".rov-orb");
+            if (orb) orb.style.transform = "scale(1.15)";
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.borderColor = "rgba(212,130,26,0.2)";
+            e.currentTarget.style.transform = "translateY(0)";
+            e.currentTarget.style.boxShadow = "0 24px 80px -20px rgba(0,0,0,0.7), inset 0 1px 0 rgba(255,255,255,0.04)";
+            const arrow = e.currentTarget.querySelector<HTMLElement>(".rov-bar-arrow");
+            if (arrow) arrow.style.transform = "translateX(0)";
+            const orb = e.currentTarget.querySelector<HTMLElement>(".rov-orb");
+            if (orb) orb.style.transform = "scale(1)";
+          }}
+        >
+          {/* Decorative orange orb */}
+          <div
+            className="rov-orb"
+            style={{
+              position: "absolute",
+              top: "-100px",
+              right: "-100px",
+              width: "300px",
+              height: "300px",
+              borderRadius: "50%",
+              background:
+                "radial-gradient(circle, rgba(249,133,19,0.22) 0%, rgba(249,133,19,0.08) 35%, transparent 70%)",
+              pointerEvents: "none",
+              transition: "transform 0.7s ease",
+            }}
+          />
+
+          {/* Grid texture */}
+          <div
+            style={{
+              position: "absolute",
+              inset: 0,
+              opacity: 0.05,
+              backgroundImage:
+                "linear-gradient(rgba(212,130,26,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(212,130,26,0.5) 1px, transparent 1px)",
+              backgroundSize: "32px 32px",
+              pointerEvents: "none",
+              maskImage: "radial-gradient(ellipse 80% 60% at 50% 30%, black 30%, transparent 80%)",
+              WebkitMaskImage: "radial-gradient(ellipse 80% 60% at 50% 30%, black 30%, transparent 80%)",
+            }}
+          />
+
+          {/* Logo mark */}
+          <div
+            style={{
+              position: "relative",
+              padding: "28px 36px 0",
             }}
           >
             <img
               src="/images/rovbrownlogo.png"
               alt="R.O.V Studios"
-              style={{ height: "48px", opacity: 0.9 }}
+              style={{
+                height: "128px",
+                width: "auto",
+                display: "block",
+                opacity: 1,
+                filter: "drop-shadow(0 6px 28px rgba(249,133,19,0.35))",
+              }}
             />
-            <div>
-              <p
-                style={{
-                  fontFamily: "var(--font-display)",
-                  fontWeight: 900,
-                  fontSize: "18px",
-                  color: "#d4821a",
-                  margin: 0,
-                  lineHeight: 1.2,
-                }}
-              >
-                R.O.V STUDIOS
-              </p>
-              <p
-                style={{
-                  fontFamily: "var(--font-body)",
-                  fontSize: "11px",
-                  color: "#5a4a2a",
-                  margin: 0,
-                  letterSpacing: "0.08em",
-                  textTransform: "uppercase",
-                  fontWeight: 600,
-                }}
-              >
-                Design partner
-              </p>
-            </div>
           </div>
 
-          {/* Divider */}
+          {/* Top metadata row */}
           <div
             style={{
-              height: "1px",
-              background: "linear-gradient(90deg, transparent, rgba(212,130,26,0.2) 30%, rgba(212,130,26,0.2) 70%, transparent)",
-              margin: "24px 32px",
+              position: "relative",
+              padding: "18px 36px 0",
+              display: "flex",
+              alignItems: "center",
+              gap: "10px",
+              marginBottom: "16px",
             }}
-          />
+          >
+            <span
+              style={{
+                width: "8px",
+                height: "8px",
+                borderRadius: "50%",
+                background: "#F98513",
+                boxShadow: "0 0 14px rgba(249,133,19,0.7)",
+                flexShrink: 0,
+              }}
+            />
+            <span
+              style={{
+                fontFamily: "var(--font-body)",
+                fontSize: "10px",
+                fontWeight: 700,
+                letterSpacing: "0.18em",
+                textTransform: "uppercase",
+                color: "#d4821a",
+              }}
+            >
+              Design Partner
+            </span>
+            <span style={{ width: "1px", height: "10px", background: "rgba(212,130,26,0.35)" }} />
+            <span
+              style={{
+                fontFamily: "var(--font-body)",
+                fontSize: "10px",
+                fontWeight: 600,
+                letterSpacing: "0.18em",
+                textTransform: "uppercase",
+                color: "rgba(212,130,26,0.6)",
+              }}
+            >
+              Atlanta · 2024
+            </span>
+          </div>
 
-          {/* Value props */}
-          <div style={{ padding: "0 32px 28px" }}>
+          {/* Massive wordmark */}
+          <div style={{ position: "relative", padding: "0 36px" }}>
+            <h4
+              style={{
+                fontFamily: "var(--font-display)",
+                fontWeight: 900,
+                fontSize: "60px",
+                lineHeight: 0.85,
+                letterSpacing: "-0.04em",
+                margin: 0,
+                background:
+                  "linear-gradient(180deg, #f4f1ec 0%, #f0ece0 40%, #d4821a 100%)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+                backgroundClip: "text",
+              }}
+            >
+              Range
+              <br />
+              of View
+            </h4>
             <p
               style={{
                 fontFamily: "var(--font-body)",
-                fontSize: "14px",
-                color: "#8a8a9a",
-                lineHeight: 1.7,
-                margin: 0,
-                marginBottom: "24px",
+                fontSize: "10px",
+                fontWeight: 700,
+                letterSpacing: "0.42em",
+                textTransform: "uppercase",
+                color: "#d4821a",
+                margin: "12px 0 0 0",
               }}
             >
-              The studio behind ATM&apos;s brand. Every pixel on this site was
-              crafted by hand — not generated.
+              S · T · U · D · I · O · S
             </p>
-
-            {[
-              { label: "Brand systems that feel alive", icon: "◆" },
-              { label: "UI with actual personality", icon: "◆" },
-              { label: "Design that earns the first click", icon: "◆" },
-            ].map((item) => (
-              <div
-                key={item.label}
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "12px",
-                  padding: "10px 0",
-                  borderBottom: "1px solid rgba(155,172,216,0.06)",
-                }}
-              >
-                <span
-                  style={{
-                    fontSize: "6px",
-                    color: "#d4821a",
-                    flexShrink: 0,
-                  }}
-                >
-                  {item.icon}
-                </span>
-                <span
-                  style={{
-                    fontFamily: "var(--font-body)",
-                    fontSize: "13px",
-                    fontWeight: 500,
-                    color: "#c8c4bc",
-                  }}
-                >
-                  {item.label}
-                </span>
-              </div>
-            ))}
           </div>
 
-          {/* CTA footer */}
-          <a
-            href="https://www.rovstudios.com/"
-            target="_blank"
-            rel="noopener noreferrer"
+          {/* Pull quote */}
+          <div
+            style={{
+              position: "relative",
+              margin: "26px 36px 24px",
+              paddingLeft: "18px",
+              borderLeft: "2px solid rgba(249,133,19,0.55)",
+            }}
+          >
+            <p
+              style={{
+                fontFamily: "var(--font-display)",
+                fontWeight: 600,
+                fontStyle: "italic",
+                fontSize: "18px",
+                lineHeight: 1.4,
+                color: "#f0ece0",
+                margin: 0,
+                letterSpacing: "-0.01em",
+              }}
+            >
+              We don&apos;t generate. We craft.
+            </p>
+            <p
+              style={{
+                fontFamily: "var(--font-body)",
+                fontSize: "12.5px",
+                color: "#bcbccc",
+                marginTop: "10px",
+                marginBottom: 0,
+                lineHeight: 1.65,
+              }}
+            >
+              Every pixel on this site was placed by hand. The brand, the
+              type, the motion. All of it.
+            </p>
+          </div>
+
+          {/* Bottom CTA bar */}
+          <div
+            className="rov-cta-bar"
             style={{
               display: "flex",
               alignItems: "center",
-              justifyContent: "center",
-              gap: "8px",
-              padding: "16px 32px",
-              background: "rgba(212,130,26,0.06)",
-              borderTop: "1px solid rgba(212,130,26,0.12)",
-              textDecoration: "none",
-              transition: "background 0.3s",
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.background = "rgba(212,130,26,0.12)";
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.background = "rgba(212,130,26,0.06)";
+              justifyContent: "space-between",
+              padding: "18px 36px",
+              background:
+                "linear-gradient(90deg, rgba(249,133,19,0.10), rgba(249,133,19,0.02))",
+              borderTop: "1px solid rgba(249,133,19,0.18)",
+              position: "relative",
             }}
           >
             <span
               style={{
                 fontFamily: "var(--font-body)",
-                fontSize: "13px",
-                fontWeight: 600,
-                color: "#d4821a",
+                fontSize: "12px",
+                fontWeight: 700,
+                color: "#f0ece0",
+                letterSpacing: "0.12em",
+                textTransform: "uppercase",
               }}
             >
-              See the work
+              Visit the studio
             </span>
-            <svg
-              width="14"
-              height="14"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="#d4821a"
-              strokeWidth="2.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
+            <span
+              className="rov-bar-arrow"
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                justifyContent: "center",
+                width: "38px",
+                height: "38px",
+                borderRadius: "50%",
+                background: "#F98513",
+                color: "#07070d",
+                transition: "transform 0.4s cubic-bezier(0.25,0.46,0.45,0.94)",
+                boxShadow: "0 4px 18px rgba(249,133,19,0.4)",
+              }}
             >
-              <path d="M5 12h14M12 5l7 7-7 7" />
-            </svg>
-          </a>
-        </div>
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="3"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </span>
+          </div>
+        </a>
       </div>
     </section>
   );

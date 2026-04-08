@@ -1,17 +1,12 @@
 "use client";
 
-import { useState } from "react";
 import { motion } from "motion/react";
-import { MapPin, ArrowRight, CalendarPlus } from "lucide-react";
+import { MapPin, CalendarPlus } from "lucide-react";
 import RevealOnScroll from "@/components/ui/RevealOnScroll";
 import GlowButton from "@/components/ui/GlowButton";
-import { UPCOMING_EVENT, PAST_EVENTS, MEETUP_URL } from "@/lib/constants";
-
-type Tab = "upcoming" | "past";
+import { UPCOMING_EVENT } from "@/lib/constants";
 
 export default function Events() {
-  const [activeTab, setActiveTab] = useState<Tab>("upcoming");
-
   return (
     <section
       id="events"
@@ -71,47 +66,10 @@ export default function Events() {
           </RevealOnScroll>
         </div>
 
-        {/* Right: pill tab switcher */}
-        <RevealOnScroll delay={0.2}>
-          <div
-            style={{
-              background: "#111118",
-              borderRadius: "999px",
-              padding: "4px",
-              border: "1px solid #1e1e2a",
-              display: "flex",
-              marginBottom: "8px",
-            }}
-          >
-            {(["upcoming", "past"] as Tab[]).map((tab) => (
-              <button
-                key={tab}
-                onClick={() => setActiveTab(tab)}
-                style={{
-                  padding: "9px 22px",
-                  borderRadius: "999px",
-                  border: "none",
-                  cursor: "pointer",
-                  fontFamily: "var(--font-body)",
-                  fontSize: "13px",
-                  fontWeight: 600,
-                  textTransform: "uppercase",
-                  letterSpacing: "0.08em",
-                  transition: "all 0.3s",
-                  background: activeTab === tab ? "#d4821a" : "transparent",
-                  color: activeTab === tab ? "#07070d" : "#555",
-                }}
-              >
-                {tab}
-              </button>
-            ))}
-          </div>
-        </RevealOnScroll>
       </div>
 
       {/* ── Content ── */}
-      {activeTab === "upcoming" ? (
-        <RevealOnScroll delay={0.15}>
+      <RevealOnScroll delay={0.15}>
           {/* Featured event card */}
           <div
             className="events-featured"
@@ -138,6 +96,30 @@ export default function Events() {
                 overflow: "hidden",
               }}
             >
+              {/* Event photo */}
+              <img
+                src="/images/5.jpg"
+                alt="Atlanta Tech Meetup community"
+                style={{
+                  position: "absolute",
+                  inset: 0,
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                }}
+              />
+
+              {/* Dark gradient overlay for legibility */}
+              <div
+                style={{
+                  position: "absolute",
+                  inset: 0,
+                  background:
+                    "linear-gradient(135deg, rgba(7,7,13,0.55) 0%, rgba(7,7,13,0.35) 50%, rgba(42,16,8,0.55) 100%)",
+                  pointerEvents: "none",
+                }}
+              />
+
               {/* Orange orb */}
               <div
                 style={{
@@ -148,7 +130,7 @@ export default function Events() {
                   height: "300px",
                   borderRadius: "50%",
                   background:
-                    "radial-gradient(circle, rgba(212,130,26,0.18) 0%, transparent 70%)",
+                    "radial-gradient(circle, rgba(212,130,26,0.25) 0%, transparent 70%)",
                   pointerEvents: "none",
                 }}
               />
@@ -264,7 +246,7 @@ export default function Events() {
                         display: "block",
                       }}
                     >
-                      01
+                      08
                     </span>
                   </div>
 
@@ -279,18 +261,18 @@ export default function Events() {
                         display: "block",
                       }}
                     >
-                      Tuesday
+                      Wednesday
                     </span>
                     <span
                       style={{
                         fontFamily: "var(--font-body)",
                         fontSize: "13px",
-                        color: "#5a5a6a",
+                        color: "#9494a4",
                         display: "block",
                         marginTop: "2px",
                       }}
                     >
-                      6:00 PM — 8:30 PM EST
+                      6:00 PM to 8:00 PM EDT
                     </span>
                   </div>
                 </div>
@@ -316,7 +298,7 @@ export default function Events() {
                     fontFamily: "var(--font-body)",
                     fontSize: "15px",
                     lineHeight: 1.75,
-                    color: "#9a9aaa",
+                    color: "#bcbccc",
                     marginBottom: "20px",
                   }}
                 >
@@ -332,12 +314,12 @@ export default function Events() {
                     marginBottom: "36px",
                   }}
                 >
-                  <MapPin size={14} style={{ color: "#8a8a9a", flexShrink: 0 }} />
+                  <MapPin size={14} style={{ color: "#a8a8b8", flexShrink: 0 }} />
                   <span
                     style={{
                       fontFamily: "var(--font-body)",
                       fontSize: "13px",
-                      color: "#8a8a9a",
+                      color: "#a8a8b8",
                     }}
                   >
                     {UPCOMING_EVENT.location}
@@ -354,7 +336,7 @@ export default function Events() {
                 }}
               >
                 <GlowButton
-                  href={MEETUP_URL}
+                  href={UPCOMING_EVENT.rsvpLink}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-3 whitespace-nowrap font-[var(--font-body)] font-bold text-sm tracking-wide rounded-full"
@@ -379,9 +361,9 @@ export default function Events() {
                     gap: "6px",
                     fontFamily: "var(--font-body)",
                     fontSize: "13px",
-                    color: "#444",
+                    color: "#7e8090",
                     textDecoration: "none",
-                    borderBottom: "1px solid #2a2a35",
+                    borderBottom: "1px solid #3a3a4a",
                     paddingBottom: "2px",
                     transition: "color 0.3s",
                   }}
@@ -392,77 +374,7 @@ export default function Events() {
               </div>
             </div>
           </div>
-        </RevealOnScroll>
-      ) : (
-        <div
-          className="events-past-grid"
-          style={{
-            padding: "52px 80px 0",
-            maxWidth: "var(--max-width)",
-            margin: "0 auto",
-            display: "grid",
-            gridTemplateColumns: "repeat(3, 1fr)",
-            gap: "16px",
-          }}
-        >
-          {PAST_EVENTS.map((event, i) => (
-            <RevealOnScroll key={event.title} delay={i * 0.08}>
-              <div
-                style={{
-                  border: "1px solid #1a1a24",
-                  borderRadius: "12px",
-                  padding: "24px",
-                  background: "transparent",
-                  transition: "all 0.4s",
-                  cursor: "default",
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.borderColor = "#2a2a3a";
-                  e.currentTarget.style.background = "rgba(13,13,20,0.5)";
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.borderColor = "#1a1a24";
-                  e.currentTarget.style.background = "transparent";
-                }}
-              >
-                <span
-                  style={{
-                    fontFamily: "var(--font-body)",
-                    fontSize: "11px",
-                    fontWeight: 600,
-                    color: "#d4821a",
-                    letterSpacing: "0.12em",
-                  }}
-                >
-                  {event.date}
-                </span>
-                <h4
-                  style={{
-                    fontFamily: "var(--font-display)",
-                    fontWeight: 500,
-                    fontSize: "1.05rem",
-                    color: "#f0ece0",
-                    marginTop: "10px",
-                    marginBottom: "10px",
-                    lineHeight: 1.3,
-                  }}
-                >
-                  {event.title}
-                </h4>
-                <p
-                  style={{
-                    fontFamily: "var(--font-body)",
-                    fontSize: "13px",
-                    color: "#5a5a6a",
-                  }}
-                >
-                  {event.speaker}
-                </p>
-              </div>
-            </RevealOnScroll>
-          ))}
-        </div>
-      )}
+      </RevealOnScroll>
 
       {/* Bottom spacing */}
       <div style={{ height: "100px" }} />

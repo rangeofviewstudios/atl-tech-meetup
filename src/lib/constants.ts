@@ -1,6 +1,5 @@
 export const NAV_LINKS = [
   { label: "About", href: "#about" },
-  { label: "The Human Layer", href: "#human" },
   { label: "Events", href: "#events" },
   { label: "Community", href: "#community" },
 ] as const;
@@ -12,12 +11,12 @@ export const STATS = [
 ] as const;
 
 export const UPCOMING_EVENT = {
-  date: "TUE APR 1, 2025",
-  title: "AI in Production: From Prototype to Scale",
+  date: "WED APR 8, 2026",
+  title: "ATMG: AI Build Cohort Kickoff",
   description:
-    "Join us for an evening exploring real-world AI deployment strategies. Featuring talks on MLOps pipelines, edge inference, and the human side of shipping AI products.",
-  location: "Atlanta Tech Park, Peachtree Corners, GA",
-  rsvpLink: "https://www.meetup.com/atl-tech-meetup/",
+    "Part hackathon, part workshop, part real product building. Come build with AI alongside other Atlanta technologists, working with Claude and modern AI workflows to ship open-source projects together. Hands-on, collaborative, and a little bit messy in the best way.",
+  location: "Shared upon acceptance (space is limited)",
+  rsvpLink: "https://www.meetup.com/atl-technology-meetup-group/events/313986477/",
 };
 
 export const PAST_EVENTS = [
@@ -70,7 +69,7 @@ export const SPEAKERS = [
     name: "Jordan Kim",
     title: "CTO, Distributed Systems Co.",
     image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=533&fit=crop&crop=face",
-    quote: "Resilience isn't built — it's designed.",
+    quote: "Resilience isn't built. It's designed.",
   },
   {
     name: "Aaliyah Brooks",
@@ -82,7 +81,7 @@ export const SPEAKERS = [
     name: "Chen Wei",
     title: "VP Engineering, FinTech Labs",
     image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=533&fit=crop&crop=face",
-    quote: "Culture eats strategy for breakfast — especially in DevOps.",
+    quote: "Culture eats strategy for breakfast, especially in DevOps.",
   },
   {
     name: "Sam Okafor",
@@ -120,7 +119,9 @@ export const FOUNDERS = [
 export const MEETUP_URL = "https://www.meetup.com/atl-technology-meetup-group/";
 
 export const SOCIAL_LINKS = [
-  { label: "Meetup", href: "https://www.meetup.com/atl-tech-meetup/" },
-  { label: "LinkedIn", href: "https://linkedin.com" },
-  { label: "X / Twitter", href: "https://x.com" },
+  { label: "Meetup", href: "https://www.meetup.com/atl-technology-meetup-group/" },
+  // TODO: replace with the real ATM LinkedIn page URL when available
+  { label: "LinkedIn", href: "https://www.linkedin.com/" },
+  // TODO: replace with the real ATM X / Twitter profile URL when available
+  { label: "X / Twitter", href: "https://x.com/" },
 ] as const;

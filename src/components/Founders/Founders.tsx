@@ -96,13 +96,13 @@ export default function Founders() {
                 fontFamily: "var(--font-body)",
                 fontSize: "15px",
                 lineHeight: 1.75,
-                color: "#9a9aaa",
+                color: "#bcbccc",
                 maxWidth: "340px",
                 margin: 0,
                 marginBottom: "8px",
               }}
             >
-              Not a committee. Not a brand. Two builders who were tired of
+              Not a committee. Not a brand. Just two builders who got tired of
               surface-level networking and decided to do something about it.
             </p>
           </RevealOnScroll>
@@ -241,7 +241,7 @@ export default function Founders() {
                         fontFamily: "var(--font-body)",
                         fontSize: "13.5px",
                         lineHeight: 1.7,
-                        color: "#9a9aaa",
+                        color: "#bcbccc",
                         marginBottom: "22px",
                         maxWidth: "320px",
                         marginTop: 0,
@@ -282,7 +282,7 @@ export default function Founders() {
                             display: "flex",
                             alignItems: "center",
                             justifyContent: "center",
-                            color: "#8a8a9a",
+                            color: "#a8a8b8",
                             textDecoration: "none",
                             transition: "border-color 0.3s, color 0.3s",
                           }}

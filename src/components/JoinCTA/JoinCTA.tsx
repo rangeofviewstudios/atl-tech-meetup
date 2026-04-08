@@ -43,7 +43,7 @@ export default function JoinCTA() {
 
         <RevealOnScroll delay={0.5}>
           <p className="font-[var(--font-body)] font-medium text-secondary text-xl mb-12">
-            Make networking easier than ever.
+            Walk in a stranger. Leave with a few good people in your corner.
           </p>
         </RevealOnScroll>
 
