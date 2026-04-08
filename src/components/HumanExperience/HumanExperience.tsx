@@ -1,5 +1,6 @@
 "use client";
 
+import { motion } from "motion/react";
 import RevealOnScroll from "@/components/ui/RevealOnScroll";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 
@@ -174,51 +175,59 @@ export default function HumanExperience() {
           }}
         >
           {/* Back image */}
-          <RevealOnScroll delay={0.2}>
-            <div
-              style={{
-                position: "absolute",
-                top: 0,
-                right: 0,
-                width: "65%",
-                aspectRatio: "3/4",
-                borderRadius: "16px",
-                overflow: "hidden",
-                boxShadow: "0 20px 60px rgba(0,0,0,0.5)",
-                transform: "rotate(2deg)",
-              }}
-            >
-              <img
-                src="/images/4.jpg"
-                alt="People collaborating on technology"
-                style={{ width: "100%", height: "100%", objectFit: "cover" }}
-              />
-            </div>
-          </RevealOnScroll>
+          <motion.div
+            initial={{ opacity: 0, y: 40, rotate: 2 }}
+            whileInView={{ opacity: 1, y: 0, rotate: 2 }}
+            transition={{ duration: 0.7, delay: 0.2, ease: [0.25, 0.46, 0.45, 0.94] }}
+            viewport={{ once: true, amount: 0.15 }}
+            style={{
+              position: "absolute",
+              top: 0,
+              right: 0,
+              width: "65%",
+              aspectRatio: "3/4",
+              borderRadius: "16px",
+              overflow: "hidden",
+              boxShadow: "0 20px 60px rgba(0,0,0,0.5)",
+              willChange: "transform, opacity",
+            }}
+          >
+            <img
+              src="/images/4.jpg"
+              alt="People collaborating on technology"
+              loading="lazy"
+              decoding="async"
+              style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
+            />
+          </motion.div>
 
           {/* Front image */}
-          <RevealOnScroll delay={0.35}>
-            <div
-              style={{
-                position: "absolute",
-                bottom: 0,
-                left: 0,
-                width: "55%",
-                aspectRatio: "3/4",
-                borderRadius: "16px",
-                overflow: "hidden",
-                boxShadow: "0 20px 60px rgba(0,0,0,0.5)",
-                transform: "rotate(-3deg)",
-                border: "4px solid #0f1132",
-              }}
-            >
-              <img
-                src="/images/6.jpg"
-                alt="Whiteboarding session"
-                style={{ width: "100%", height: "100%", objectFit: "cover" }}
-              />
-            </div>
-          </RevealOnScroll>
+          <motion.div
+            initial={{ opacity: 0, y: 40, rotate: -3 }}
+            whileInView={{ opacity: 1, y: 0, rotate: -3 }}
+            transition={{ duration: 0.7, delay: 0.35, ease: [0.25, 0.46, 0.45, 0.94] }}
+            viewport={{ once: true, amount: 0.15 }}
+            style={{
+              position: "absolute",
+              bottom: 0,
+              left: 0,
+              width: "55%",
+              aspectRatio: "3/4",
+              borderRadius: "16px",
+              overflow: "hidden",
+              boxShadow: "0 20px 60px rgba(0,0,0,0.5)",
+              border: "4px solid #0f1132",
+              willChange: "transform, opacity",
+            }}
+          >
+            <img
+              src="/images/6.jpg"
+              alt="Whiteboarding session"
+              loading="lazy"
+              decoding="async"
+              style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
+            />
+          </motion.div>
 
           {/* Floating badge */}
           <RevealOnScroll delay={0.5}>
