@@ -10,45 +10,13 @@ export const STATS = [
   { number: "1st Tues", label: "Every Month" },
 ] as const;
 
-export const UPCOMING_EVENT = {
-  date: "WED APR 8, 2026",
-  title: "ATMG: AI Build Cohort Kickoff",
-  description:
-    "Part hackathon, part workshop, part real product building. Come build with AI alongside other Atlanta technologists, working with Claude and modern AI workflows to ship open-source projects together. Hands-on, collaborative, and a little bit messy in the best way.",
-  location: "Shared upon acceptance (space is limited)",
-  rsvpLink: "https://www.meetup.com/atl-technology-meetup-group/events/313986477/",
-};
+export const UPCOMING_EVENT = null;
 
 export const PAST_EVENTS = [
   {
-    date: "MAR 4, 2025",
-    title: "Cloud Architecture Patterns",
-    speaker: "Marcus Rivera",
-  },
-  {
-    date: "FEB 4, 2025",
-    title: "The State of React in 2025",
-    speaker: "Priya Patel",
-  },
-  {
-    date: "JAN 7, 2025",
-    title: "Building Resilient Microservices",
-    speaker: "Jordan Kim",
-  },
-  {
-    date: "DEC 3, 2024",
-    title: "Open Source & Community",
-    speaker: "Aaliyah Brooks",
-  },
-  {
-    date: "NOV 5, 2024",
-    title: "DevOps Culture Shift",
-    speaker: "Chen Wei",
-  },
-  {
-    date: "OCT 1, 2024",
-    title: "TypeScript Deep Dive",
-    speaker: "Sam Okafor",
+    date: "APR 8, 2026",
+    title: "ATMG: AI Build Cohort Kickoff",
+    speaker: "Community Cohort",
   },
 ];
 
@@ -108,7 +76,7 @@ export const FOUNDERS = [
     role: "CO-FOUNDER",
     image: "/images/ad2.jpg",
     fallbackGradient: "linear-gradient(160deg, #071030 0%, #0d1520 50%, #07070d 100%)",
-    bio: "A.D. is the infrastructure behind the community. A natural connector and engineer by trade, she makes sure every person who walks through the door feels like they already belong.",
+    bio: "A.D. is the infrastructure behind the community. A natural connector and engineer by trade, he makes sure every person who walks through the door feels like they already belong.",
     quote: "Community is infrastructure.",
     quoteColor: "#1a2035",
     roleColor: "#8fa3cc",

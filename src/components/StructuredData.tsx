@@ -1,9 +1,5 @@
-import { UPCOMING_EVENT } from "@/lib/constants";
-
 const SITE_URL = "https://atl-tech-meetup.vercel.app";
 const MEETUP_URL = "https://www.meetup.com/atl-technology-meetup-group/";
-const EVENT_URL =
-  "https://www.meetup.com/atl-technology-meetup-group/events/313986477/";
 
 const websiteSchema = {
   "@context": "https://schema.org",
@@ -106,63 +102,7 @@ const organizationSchema = {
   ],
 };
 
-const eventSchema = {
-  "@context": "https://schema.org",
-  "@type": "Event",
-  "@id": `${EVENT_URL}#event`,
-  name: UPCOMING_EVENT.title,
-  description: UPCOMING_EVENT.description,
-  startDate: "2026-04-08T18:00:00-04:00",
-  endDate: "2026-04-08T20:00:00-04:00",
-  eventStatus: "https://schema.org/EventScheduled",
-  eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
-  url: EVENT_URL,
-  image: [`${SITE_URL}/atmcard.png`],
-  inLanguage: "en-US",
-  location: {
-    "@type": "Place",
-    name: "Atlanta Tech Park",
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: "107 Technology Parkway NW",
-      addressLocality: "Peachtree Corners",
-      addressRegion: "GA",
-      // TODO: confirm the exact venue postal code
-      postalCode: "30092",
-      addressCountry: "US",
-    },
-    geo: {
-      "@type": "GeoCoordinates",
-      // TODO: confirm the exact Atlanta Tech Park coordinates
-      latitude: 33.9701,
-      longitude: -84.2214,
-    },
-  },
-  organizer: {
-    "@id": `${SITE_URL}/#organization`,
-    "@type": "Organization",
-    name: "Atlanta Tech Meetup",
-    url: SITE_URL,
-    sameAs: [MEETUP_URL],
-  },
-  performer: {
-    "@type": "Organization",
-    name: "Atlanta Tech Meetup",
-  },
-  offers: {
-    "@type": "Offer",
-    name: "Free RSVP",
-    price: "0",
-    priceCurrency: "USD",
-    availability: "https://schema.org/InStock",
-    url: EVENT_URL,
-    validFrom: "2026-01-01T00:00:00-05:00",
-  },
-  isAccessibleForFree: true,
-  maximumAttendeeCapacity: 500,
-  keywords:
-    "AI build cohort, AI hackathon Atlanta, Claude, Atlanta tech meetup, free tech event, Peachtree Corners",
-};
+// Event schema omitted until next event is announced
 
 export default function StructuredData() {
   return (
@@ -174,10 +114,6 @@ export default function StructuredData() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(eventSchema) }}
       />
     </>
   );

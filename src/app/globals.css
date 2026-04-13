@@ -402,6 +402,18 @@ body {
 }
 
 /* ═══════════════════════════════════════════
+   GALLERY BENTO GRID
+   ═══════════════════════════════════════════ */
+
+.gallery-grid-5 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 6px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+/* ═══════════════════════════════════════════
    MOBILE MENU LOCK
    ═══════════════════════════════════════════ */
 
@@ -546,6 +558,17 @@ body.menu-open {
   /* ── Gallery Section ── */
   .gallery-section {
     padding-top: 64px !important;
+  }
+
+  .gallery-header {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 20px !important;
+  }
+
+  .gallery-grid-5 {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 4px !important;
   }
 
   /* ── Footer ── */
